@@ -162,7 +162,7 @@ RNF13 – O sistema deve funcionar em diferentes dispositivos (desktop e mobile)
 
 # 8. Regras de negócio (Modelo canvas)
 
-https://canva.link/zel5huvmvdc18zg
+<img width="1920" height="1080" alt="Modelo de negócio canvas" src="https://github.com/user-attachments/assets/2d3cc58a-dc87-41da-ad10-b3b3308ef49b" />
 
 # 9. Design
 (Paleta de cor, Tipografia, Logo, Wireframes, Modelo de navegação)
