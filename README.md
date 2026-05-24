@@ -1,7 +1,7 @@
-&lt;p align=&quot;left&quot; style=&quot;font-size:28px;&quot;&gt;&lt;strong&gt;&lt;em&gt;Documentação do
-PI&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;details&gt;
-&lt;summary&gt;&lt;strong&gt;�� Sumário&lt;/strong&gt;&lt;/summary&gt;
+<p align="left" style="font-size:28px;">
+  <strong><em>Documentação do PI</em></strong></p> 
+  <details>
+    <summary><strong>Sumário</strong></summary>
 
 - [1. Introdução](#1-introdução)
 - [Objetivos](#-objetivos)
@@ -19,7 +19,7 @@ PI&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 - [10. Protótipo](#10-protótipo)
 - [11. Aplicação](#11-aplicação)
 
-&lt;/details&gt;
+</details>
 
 Para cada semestre, do 1º ao 6º, iremos utilizar este template para documentar o PI -
 incrementalmente.
@@ -86,16 +86,8 @@ Requisitos de interoperabilidade:
 RNF12 – O sistema deve ser compatível com navegadores modernos como Google Chrome, Mozilla Firefox e Microsoft Edge. 
 RNF13 – O sistema deve funcionar em diferentes dispositivos (desktop e mobile)
 
-# 3. Modelo de casos de uso
 
-# 4. Modelo do banco de dados
-(Modelo conceitual, Modelo lógico, Físico)
-
-# 5. Banco de dados
-
-# 6. Diagrama de classes
-
-# 7. Estudo de viabilidade
+# 3. Estudo de viabilidade
 
   _Viabilidade Técnica: 
  -O projeto será desenvolvido utilizando HTML, CSS e JavaScript;  
@@ -160,15 +152,15 @@ RNF13 – O sistema deve funcionar em diferentes dispositivos (desktop e mobile)
   _Possíveis custos: 
 -Hospedagem do site (caso necessário futuramente); 
 
-# 8. Regras de negócio (Modelo canvas)
+# 4. Regras de negócio (Modelo canvas)
 
 <img width="1920" height="1080" alt="Modelo de negócio canvas" src="https://github.com/user-attachments/assets/2d3cc58a-dc87-41da-ad10-b3b3308ef49b" />
 
-# 9. Design
+# 5. Design
 (Paleta de cor, Tipografia, Logo, Wireframes, Modelo de navegação)
 
-# 10. Protótipo
+# 6. Protótipo
 (Gere um protótipo funcional na ferramenta que se sentir mais confortável (Figma, por
 exemplo) e apresente aqui, indicando o link).
 
-# 11. Aplicação# Amaral-Carvalho
+# 7. Aplicação# Amaral-Carvalho
