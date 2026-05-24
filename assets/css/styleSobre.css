@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #2E1065 0%, #7C3AED 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+
+/* --- NAVBAR --- */
+header {
+    background-color: #FFFFFF;
+    padding: 15px 50px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.logo-placeholder {
+    width: 40px;
+    height: 40px;
+    background-color: #22153C;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-placeholder i {
+    color: #ECE9FE;
+    font-size: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #22153C;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #5B21B6;
+}
+
+.btn-entrar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #22153C;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+/* --- RODAPÉ --- */
+footer {
+    background: linear-gradient(180deg, rgba(76, 29, 149, 0.8) 0%, #2E1065 100%);
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(236, 233, 254, 0.1);
+}
+
+footer h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #FFFFFF;
+}

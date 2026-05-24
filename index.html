@@ -8,29 +8,36 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/stylePrincipal.css">
 
 </head>
 
 <body>
     <!-- CABEÇALHO -->
     <header>
-        <nav >
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="assets/pages/sobre.html">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="assets/pages/jogo.html">Jogo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="assets/pages/contato.html">Contato</a>
-                </li>
+        <div class="logo-placeholder">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="assets/pages/jogos/jogos.html">Jogo</a></li>
+                <li><a href="assets/pages/sobre.html">Sobre</a></li>
+                <li><a href="/assets/pages/contatos/contato.html">Contato</a></li>
             </ul>
         </nav>
+        <a href="#" class="btn-entrar">
+            <i class="fa-solid fa-right-to-bracket"></i> Entrar
+        </a>
     </header>
 
     <!-- CONTEUDO AQ -->
@@ -38,18 +45,35 @@
         <!-- SEÇÂO DE APRESENTAÇÃO -->
         <section class="apresentacao row min-vh-100 align-items-center d-flex row gap-5 justify-content-center">
             <div class="align-items-center col-12 col-md-5  text-light">
-                <h1 class="col-12 col-md-5 text-light">Aprender <span style="color: #FBBF24;">brincando</span> faz toda a diferença</h1>
-                <p>Explore uma variedade de jogos emocionantes e divirta-se com nossos desafios interativos. Navegue pelas nossas seções para descobrir mais sobre nossos jogos, conhecer a equipe por trás deles e entrar em contato conosco para feedback ou suporte.</p>
+                <h1 class="col-12 col-md-5 text-light ">Aprender <span style="color: #FBBF24;">brincando</span> faz toda
+                    a diferença</h1>
+                <p>Explore uma variedade de jogos emocionantes e divirta-se com nossos desafios interativos. Navegue
+                    pelas nossas seções para descobrir mais sobre nossos jogos, conhecer a equipe por trás deles e
+                    entrar em contato conosco para feedback ou suporte.</p>
 
-                <button class="btn btn-light">Jogar Agora</button>
-                <button class="btn btn-warning">Saiba Mais</button>
-                
+                <div class="d-flex gap-3 row w-50 ">
+                    <button class="btn btn-warning">Jogar Agora</button>
+                    <button class="btn btn-light">Entre em contato</button>
+                </div>
+
             </div>
             <!-- IMAGEM DO ELO -->
-            <img  src="assets/img/ELO.png" alt="Imagem de Apresentação do ELO" class="imagemELO">
-         </section>   
+            <img src="assets/img/ELO.png" alt="Imagem de Apresentação do ELO" class="imagemELO">
+        </section>
+
+
+        <section class="projeto min-vh-100 align-items-center d-flex row gap-5 justify-content-center">
+
+
+
+        </section>
     </main>
 
+
+
+     <footer>
+        <h2>Rodapé</h2>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

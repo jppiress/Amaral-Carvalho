@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* --- NAVBAR --- */
+header {
+    background-color: #FFFFFF;
+    padding: 15px 50px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.logo-placeholder {
+    width: 40px;
+    height: 40px;
+    background-color: #22153C;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-placeholder i {
+    color: #ECE9FE;
+    font-size: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #22153C;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #5B21B6;
+}
+
+.btn-entrar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #22153C;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+/* SEÇÃO DE APRESENTAÇÃO */
+
+/* Definição da cor de fundo da seção de apresentação (primeira seção)*/
+.apresentacao{
+    background: linear-gradient(to bottom right, #2E1065, #4C1D95, #5B21B6, #7C3AED);
+
+}
+
+/* imagem do ELO */
+.imagemELO{
+    width: 350px;
+    height: auto;
+}
+
+.btn{
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-warning{
+    box-shadow: 2px 0px 20px rgba(255, 183, 0, 0.815);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- RODAPÉ --- */
+footer {
+    background: linear-gradient(180deg, rgba(76, 29, 149, 0.8) 0%, #2E1065 100%);
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(236, 233, 254, 0.1);
+}
+
+footer h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #ECE9FE;
+}
+
