@@ -167,12 +167,13 @@ Paleta de cor:
 -Branco: #FFFFFF <br>
 -Dourado: #FACC15 <br>
 
-Tipografia:
+Tipografia:<br>
 -Inter
 
 Logo:<br>
 <img width="1280" height="698" alt="Logo" src="https://github.com/user-attachments/assets/9d1bb7a0-9b66-4f70-bef7-cabb3f6491e9" />
 <br>
+
 Wireframes:
 
 <br> 
