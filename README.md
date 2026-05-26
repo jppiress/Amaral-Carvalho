@@ -157,10 +157,29 @@ RNF13 – O sistema deve funcionar em diferentes dispositivos (desktop e mobile)
 <img width="1920" height="1080" alt="Modelo de negócio canvas" src="https://github.com/user-attachments/assets/bae7844b-d33c-4cbb-b6e4-e8760d66dbbc" />
 
 # 5. Design
-(Paleta de cor, Tipografia, Logo, Wireframes, Modelo de navegação)
+Paleta de cor:
+-Roxo Escuro A: #2E1065
+-Roxo Escuro B: #22153C
+-Ametista Escuro: #4C1D95
+-Roxo Real: #5B21B6
+-Roxo Claro: #7C3AED
+-Cinza Claro: #ECE9FE
+-Branco: #FFFFFF
+-Dourado: #FACC15
+
+Tipografia:
+-Inter
+
+Logo:
+<img width="1280" height="698" alt="Logo" src="https://github.com/user-attachments/assets/9d1bb7a0-9b66-4f70-bef7-cabb3f6491e9" />
+
+Wireframes: 
+
+
+Modelo de navegação:
+<img width="772" height="612" alt="Modelo de Navegação" src="https://github.com/user-attachments/assets/82afa96b-bcf0-4a99-bbad-ed03aaf491bb" />
 
 # 6. Protótipo
-(Gere um protótipo funcional na ferramenta que se sentir mais confortável (Figma, por
-exemplo) e apresente aqui, indicando o link).
+https://www.figma.com/proto/vyH992W0mgX97MzCJwBxla/amaral-Rascunho?node-id=4-791&p=f&viewport=437%2C130%2C0.27&t=jHiE7U6EP4UkJCGz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A791&page-id=0%3A1
 
 # 7. Aplicação# Amaral-Carvalho
