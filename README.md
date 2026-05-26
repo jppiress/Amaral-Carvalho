@@ -158,14 +158,14 @@ RNF13 – O sistema deve funcionar em diferentes dispositivos (desktop e mobile)
 
 # 5. Design
 Paleta de cor:
--Roxo Escuro A: #2E1065
--Roxo Escuro B: #22153C
--Ametista Escuro: #4C1D95
--Roxo Real: #5B21B6
--Roxo Claro: #7C3AED
--Cinza Claro: #ECE9FE
--Branco: #FFFFFF
--Dourado: #FACC15
+-Roxo Escuro A: #2E1065 <br>
+-Roxo Escuro B: #22153C <br>
+-Ametista Escuro: #4C1D95 <br>
+-Roxo Real: #5B21B6 <br>
+-Roxo Claro: #7C3AED <br>
+-Cinza Claro: #ECE9FE <br>
+-Branco: #FFFFFF <br>
+-Dourado: #FACC15 <br>
 
 Tipografia:
 -Inter
