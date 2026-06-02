@@ -153,7 +153,7 @@ Para o hospital só existirá o custo da hospedagem do site.  <br>
 <br>
 # 4. Regras de negócio (Modelo canvas)<br>
 
-<img width="1920" height="1080" alt="Modelo de negócio canvas" src="https://github.com/user-attachments/assets/bae7844b-d33c-4cbb-b6e4-e8760d66dbbc" />
+<img width="1920" height="1080" alt="Modelo de negócio canvas (1)" src="https://github.com/user-attachments/assets/d7391d22-ccb7-4bb8-88d9-c944ea8c7b8d" />
 
 # 5. Design
 Paleta de cor:
@@ -184,3 +184,4 @@ Modelo de navegação:<br>
 https://www.figma.com/proto/vyH992W0mgX97MzCJwBxla/amaral-Rascunho?node-id=4-791&p=f&viewport=437%2C130%2C0.27&t=jHiE7U6EP4UkJCGz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A791&page-id=0%3A1
 
 # 7. Aplicação# Amaral-Carvalho
+https://amaralelo.netlify.app/
