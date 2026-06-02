@@ -25,9 +25,9 @@ Para cada semestre, do 1º ao 6º, iremos utilizar este template para documentar
 incrementalmente.
 
 # 1. Introdução
-Contexto: Há pouca disponibilidade de jogos educativos acessíveis ao público infantil, especialmente em ambientes como hospitais, onde podem auxiliar no aprendizado e no acolhimento das crianças. 
+Contexto: O hospital Amaral Carvalho possui um robô chamado elo, que foi um investimento do Hospital, porém não está sendo utilizado 100% do tempo. 
 
-Justificativa:  criação de um site que funcione como repositório de jogos para o Amaral Carvalho, com o objetivo de disponibilizar jogos educativos voltados ao público infantil no ambiente hospitalar, contribuindo para o aprendizado e o acolhimento das crianças.  
+Justificativa: Sabendo disso iremos criar um site que irá acolher as crianças que estão em tratamento no hospital e que irá dar mais utilidade para o robô. 
 
 ## • Objetivos
 
@@ -45,19 +45,19 @@ Quem? Crianças
 
 ## • Requisitos funcionais<br>
 
-RF01 – O sistema deve permitir que usuários realizem cadastro e login. <br>
-RF02 – O sistema deve permitir navegação entre as páginas: Início, Sobre, Jogos, Contato e Login. <br>
-RF03 – O sistema deve permitir que administradores publiquem e removam jogos na plataforma. <br>
-RF04 – O sistema deve permitir que usuários visualizem a lista de jogos disponíveis. <br>
+RF01 – O sistema deve permitir que usuários realizem cadastro e login: Nome, E-mail, Senha e Confirmação de senha. <br>
+RF02 – O sistema deve permitir navegação entre as páginas: Início, Sobre, Jogos, Contato. Login/cadastro e Equipe. <br>
+RF03 – O sistema deve permitir que administradores publiquem e removam jogos na plataforma: Nome, Categoria, Descrição, Imagem de capa, Arquivo ou link do jogo. <br>
+RF04 – O sistema deve peossuir uma vitrina para exibição dos jogos disponíveis: Nome do jogo, Imagem/capa, Categoria, Descrição resumida, Avaliação média. <br>
 RF05 – O sistema deve permitir que o usuário visualize os detalhes de um jogo ao selecioná-lo. <br>
-RF06 – O sistema deve permitir que o usuário jogue os jogos diretamente no site por meio de um botão “Jogar”. O sistema deve permitir que os jogos sejam executados diretamente no navegador.  <br>
+RF06 - O sistema deve permitir que os jogos sejam executados diretamente no navegador: Botão"Jogar", Carregamento do jogo na própria plataforma. <br>
 RF07 – O sistema deve permitir que usuários enviem feedbacks sobre os jogos. <br>
-RF08 – O sistema deve permitir que usuários avaliem os jogos por meio de notas (ex: sistema de estrelas). <br>
-RF09 – O sistema deve possuir uma funcionalidade de busca para encontrar jogos. <br>
-RF10 – O sistema deve apresentar uma página de Contato com formulário para envio de dúvidas e links para redes sociais. <br>
-RF11 – O sistema deve permitir a visualização das equipes responsáveis pelo projeto (Amaral e PI). <br>
-RF12 – O sistema deve exibir os jogos mais bem avaliados ou em destaque. <br>
-RF13 – O sistema deve permitir organizar ou filtrar jogos (por nome, avaliação ou categoria). <br>
+RF08 – O sistema deve permitir que usuários avaliem os jogos por meio de notas: Nota de 1 a 5 estrelas, Comentário testual <br>
+RF09 – O sistema deve possuir um sistema de pesquisa por nome do jogo: Campo de pesquisa, Exibição dos resultados encontrados. <br>
+RF10 – O sistema deve apresentar uma página de Contato com formulário para envio de dúvidas e links para redes sociais: Nome, E-mail, Assunto, Mensagem, Link para redes sociais. <br>
+RF11 – O sistema deve permitir a visualização das equipes responsáveis pelo projeto: Nome dos integrantes, Função ou participação no projeto, Foto(opcional). <br>
+RF12 – O sistema deve exibir os jogos mais bem avaliados ou em destaque: Jogos mais acessados, Jogos mais bem avaliados. <br>
+RF13 – O sistema deve permitir a filtragem de jogos: Categoria, Avaliação, Ordem alfabética. <br>
 <br>
 ## • Requisitos não funcionais<br>
 <br>
@@ -89,68 +89,68 @@ RNF13 – O sistema deve funcionar em diferentes dispositivos (desktop e mobile)
 
 # 3. Estudo de viabilidade<br>
 <br>
-  _Viabilidade Técnica: <br>
- -O projeto será desenvolvido utilizando HTML, CSS e JavaScript;  <br>
+  *Viabilidade Técnica: <br>
+Utilização de navegadores(Chrome, Edge, FireFox);  <br>
  <br>
-  _Recursos: <br>
--Computadores para desenvolvimento; <br>
--Navegadores modernos (Chrome, Edge, Firefox); <br>
--Ferramentas de organização como Trello; <br>
--Conhecimento básico em desenvolvimento web; <br>
+  *Recursos: <br>
+Ferramentas de organização como o Trello; <br>
+Dispositivos eletrônicos por parte dos desenvolvedores, utilizando a infraestrutura da fatec, como computadores e notebooks; <br>
 <br>
-  _Viabilidade Operacional: <br>
+  *Viabilidade Operacional: <br>
   <br>
-  _Gerenciamento: <br>
--O projeto seguirá modelo de desenvolvimento incremental; <br>
--Entregas parciais ao longo do semestre; <br>
--O acompanhamento de todas as tarefas será realizado através da ferramenta Trello; <br>
--Desenvolvimento também dividido entre os integrantes; <br>
--O código será organizado e comentado para permitir que equipe realizem manutenções futuras;<br>
--Sistema simples de manter e atualizar; <br>
+  *Gerenciamento: <br>
+O projeto seguirá modelo de desenvolvimento incremental; <br>
+Entregas parciais ao longo do semestre; <br>
+O acompanhamento de todas as tarefas será realizado através da ferramenta Trello; <br>
+Desenvolvimento dividido entre os integrantes; <br>
+O código será organizado e comentado para permitir que equipe realizem manutenções futuras;<br>
+Sistema simples de manter e atualizar; <br>
 <br>
-  _Viabilidade de Mercado:<br>
--Existe pouca disponibilidade de jogos educativos acessíveis ao público infantil em ambientes hospitalares; <br>
--Quase nenhum é voltado para hospitais; <br>
--Falta foco em crianças em tratamento;<br>
+  *Viabilidade de Mercado:<br>
+Existe um crescimento do mercado de plataformas digitais voltadas ao entretenimento e aprendizado infantil. <br>
+Quase nenhum é voltado para hospitais; <br>
+Falta foco em crianças em tratamento;<br>
    <br>
    *Público-alvo: <br>
--Crianças em tratamento hospitalar; <br>
--Instituições de saúde; <br>
--Educadores e familiares; <br>
+Crianças em tratamento hospitalar; <br>
+Instituições de saúde; <br>
+Educadores e familiares; <br>
   <br>
   *Concorrência: <br>
--Embora existam plataformas semelhantes, o projeto se destaca por atender um nicho específico ainda pouco explorado;<br>
+Em relação aos concorrentes existam plataformas semelhantes,porém o projeto se destaca por ser um site próprio do hospital. <br>
   <br>
   *Diferencial:<br>
   <br>
-  *Foco em ambiente hospitalar: <br>
--crianças internadas; <br>
--ambiente hospitalar; <br>
--momentos de fragilidade (tratamento, espera, recuperação);<br>
+Foco em ambiente hospitalar: <br>
+crianças internadas; <br>
+ambiente hospitalar; <br>
+momentos de fragilidade (tratamento, espera, recuperação);<br>
 <br>
   *Interface simples e acessível: <br>
--interface simples, intuitiva e fácil para crianças; <br>
+interface simples, intuitiva e fácil para crianças; <br>
 <br>
   *Possibilidade de inclusão de jogos próprios: <br>
--adicionar novos jogos; <br>
--criar jogos próprios; <br>
--talvez até receber jogos de terceiros no futuro; <br>
+adicionar novos jogos; <br>
+criar jogos próprios; <br>
+talvez até receber jogos de terceiros no futuro; <br>
 <br>
   *Projeção de vendas (ou retorno): <br>
--Uso por crianças no hospital; <br>
--Benefício educacional; <br>
--Apoio emocional; <br>
--Possível expansão para outras instituições; <br>
+Uso por crianças no hospital; <br>
+Benefício educacional; <br>
+Apoio emocional; <br>
+Possível expansão para outras instituições; <br>
 <br>
-  _Viabilidade Financeira: <br>
--Este projeto possui baixo custo; <br>
+  *Viabilidade Financeira: <br>
+Não haverá ganho pois é um projeto educacional. <br>
+Este projeto possui baixo custo; <br>
 <br>
-  _Custo de Desenvolvimento: <br>
--Não há custos de licenciamento de software. Os recursos principais são os equipamentos dos próprios integrantes (notebooks pessoais), e o suporte da infraestrutura da Fatec. <br>
--Hospedagem por enquanto será pelo Github; <br>
+  *Custo de Desenvolvimento: <br>
+Para a equipe existirá o custo de energia e horas de trabalho.
+Não há custos de licenciamento de software. Os recursos principais são os equipamentos dos próprios integrantes (notebooks pessoais), e o suporte da infraestrutura da Fatec. <br>
+Hospedagem por enquanto será pelo Github; <br>
   <br>
   _Possíveis custos: <br>
--Hospedagem do site (caso necessário futuramente); <br>
+Para o hospital só existirá o custo da hospedagem do site.  <br>
 <br>
 # 4. Regras de negócio (Modelo canvas)<br>
 
