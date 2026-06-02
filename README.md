@@ -120,7 +120,6 @@ Educadores e familiares; <br>
 Em relação aos concorrentes existam plataformas semelhantes,porém o projeto se destaca por ser um site próprio do hospital. <br>
   <br>
   *Diferencial:<br>
-  <br>
 Foco em ambiente hospitalar: <br>
 crianças internadas; <br>
 ambiente hospitalar; <br>
