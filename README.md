@@ -194,17 +194,20 @@ Análise detalhada das viabilidades técnica, operacional, de mercado e financei
 
 
 # 5. Design
-Paleta de cor:
--Roxo Escuro A: #2E1065 <br>
--Roxo Escuro B: #22153C <br>
--Ametista Escuro: #4C1D95 <br>
--Roxo Real: #5B21B6 <br>
--Roxo Claro: #7C3AED <br>
--Cinza Claro: #ECE9FE <br>
--Branco: #FFFFFF <br>
--Dourado: #FACC15 <br>
+## Paleta de cor:
 
-Tipografia:<br>
+| Categoria / Nome | Hexadecimais |
+| :--- | :--- |
+| **ROXO ESCURO A** | `#2E1065` |
+| **ROXO ESCURO B** | `#22153C` |
+| **AMETISTA ESCURO** | `#4C1D95` |
+| **ROXO REAL** | `#5B21B6` |
+| **ROXO CLARO** | `#7C3AED` |
+| **CINZA CLARO** | `#ECE9FE` |
+| **DOURADO** | `#FACC15` |
+
+
+## Tipografia:
 -Inter
 
 Logo:<br>
