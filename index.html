@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial - ELO</title>
+    <title>Inicio</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon_io/site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/stylePrincipal.css">
 </head>
 
@@ -21,10 +25,11 @@
     <header class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container navbar-container">
             <a class="navbar-brand logo-placeholder" href="/index.html">
-                <img src="assets/img/logo.png" alt="Logo do ELO" class="img-fluid rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
+                <img src="assets/img/logo.png" alt="Logo do ELO" class="img-fluid rounded-circle"
+                    style="width: 40px; height: 40px; object-fit: cover;">
             </a>
-            
-            <nav class="d-none d-md-flex align-items-center mx-auto">
+
+            <nav class=" d-md-flex align-items-center mx-auto">
                 <ul class="nav-links">
                     <li><a href="/index.html" class="active">Início</a></li>
                     <li><a href="pages/jogos/jogos.html">Jogo</a></li>
@@ -32,7 +37,7 @@
                     <li><a href="pages/contato.html">Contato</a></li>
                 </ul>
             </nav>
-            
+
             <a href="pages/login/index.html" class="btn-entrar">
                 <i class="fa-solid fa-right-to-bracket"></i>Entrar
             </a>
@@ -44,33 +49,43 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between g-5">
                     <div class="col-12 col-md-6 text-light content-hero">
-                        <span class="badge-tag mb-3 d-flex justify-content-center align-items-center">Hospital Amaral Carvalho</span>
-                        <h1 class="display-5 mb-3">Aprender, <span class="highlight-yellow">brincar</span> e se divertir</h1>
-                        <p class="opacity-90 mb-5">Este portal reúne jogos educativos desenvolvidos para auxiliar crianças em momentos de aprendizagem, diversão e acolhimento durante sua permanência no Hospital Amaral Carvalho.</p>
+                        <span class="badge-tag mb-3 d-flex justify-content-center align-items-center">Hospital Amaral
+                            Carvalho</span>
+                        <h1 class="display-5 mb-3">Aprender, <span class="highlight-yellow">brincar</span> e se divertir
+                        </h1>
+                        <p class="opacity-90 mb-5">Este portal reúne jogos educativos desenvolvidos para auxiliar
+                            crianças em momentos de aprendizagem, diversão e acolhimento durante sua permanência no
+                            Hospital Amaral Carvalho.</p>
 
                         <div class="d-flex flex-wrap gap-3">
                             <a href="pages/jogos/jogos.html" class="btn btn-warning-custom">Explorar Jogos</a>
-                            <a href="pages/contato.html" class="btn btn-outline-light-custom">Entrar em Contato</a>
+                            <a href="#projeto" class="btn btn-outline-light-custom">Saiba mais</a>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 text-center ">
-                        <img src="assets/img/Elo2k.png" alt="Imagem de Apresentação do ELO" class="img-fluid d-none d-md-block">
+                        <img src="assets/img/Elo2k.png" alt="Imagem de Apresentação do ELO"
+                            class="img-fluid d-none d-md-block">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="projeto py-5 section-light text-center">
+        <section id="projeto" class="projeto py-5 section-light text-center">
             <div class="container py-4">
                 <span class="badge-tag-dark mb-3">Proposta do Projeto:</span>
                 <h2 class="section-title mb-5">Uma experiência pensada para cada criança</h2>
-                
+
                 <div class="row justify-content-center g-4">
-                    <div class="col-12 col-md-4 col-lg-3">
+                    <div class="col-12 col-md-4 col-lg-3 ">
                         <div class="card h-100 border-0 shadow-sm card-proposta">
                             <div class="card-body py-4">
-                                <div class="icon-box mb-3"><i class="fa-solid fa-robot"></i></div>
+                                <div class="icon-box mb-3 "><i class="fa-solid fa-robot"></i></div>
                                 <p class="card-text fw-bold m-0">Robô ELO</p>
+                                <p>Seu companheiro durante as atividades.</p>
+                                <button type="button" class="btn texto " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop ">
+                                    Saiba Mais <i class="fa-solid fa-arrow-right"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -79,6 +94,7 @@
                             <div class="card-body py-4">
                                 <div class="icon-box mb-3"><i class="fa-solid fa-heart"></i></div>
                                 <p class="card-text fw-bold m-0">Suporte Emocional</p>
+                                <p>Aprendizado e diversão em momentos difíceis.</p>
                             </div>
                         </div>
                     </div>
@@ -87,11 +103,98 @@
                             <div class="card-body py-4">
                                 <div class="icon-box mb-3"><i class="fa-solid fa-gamepad"></i></div>
                                 <p class="card-text fw-bold m-0">Jogos Educativos</p>
+                                <p>Histórias, memória, lógica e criatividade.</p>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Robô Elo</h1>
+                            <button type="button" class="btn-close bg-" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start">
+                            <div class="bg-light mb-4 border-0 shadow-sm p-3 rounded-4">
+                                <p class="lead fw-bold">
+                                    O novo Ursinho Elo é uma versão robótica e tecnológica do projeto original de 2014,
+                                    desenvolvida pelo Hospital Amaral Carvalho para humanizar o tratamento de crianças
+                                    com câncer.
+                                </p>
+                            </div>
+
+                            <div class="bg-light mb-4 border-0 shadow-sm p-4 rounded-4">
+                                <div class="row g-4 align-items-center">
+
+                                    <article class="col-lg-7 order-lg-1 order-2 ">
+                                        <h2>Características e Funcionalidades</h2>
+
+
+                                        <ul>
+                                            <li>Mobilidade e Autonomia: O robô possui cerca de 1,5 metros de altura e
+                                                foi programado para mapear toda a área da pediatria, conseguindo se
+                                                locomover sozinho até os quartos dos pacientes após receber um comando.
+                                            </li>
+                                            <li>
+                                                Interação Visual: Ele possui olhos que piscam e uma tela acoplada onde
+                                                as crianças podem assistir a vídeos.
+                                            </li>
+                                            <li>
+                                                Mensagens de Afeto: Diferente da versão original que apenas reproduzia
+                                                áudios, o novo robô traz mensagens em vídeo de familiares e amigos,
+                                                permitindo que a criança veja e ouça seus entes queridos.
+                                            </li>
+                                            <li>
+                                                Entretenimento e Jogos: O Elo funciona como um companheiro interativo,
+                                                sendo capaz de contar histórias, cantar parabéns e participar de jogos
+                                                como o da memória e o jogo da velha
+                                            </li>
+                                            <li>
+                                                Informação: Ele também é utilizado para apresentar vídeos institucionais
+                                                e explicar as tarefas e rotinas da pediatria para os pacientes
+                                            </li>
+                                        </ul>
+                                    </article>
+
+                                    <div class="col-lg-5 justify-content-center d-flex ">
+                                        <iframe
+                                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3171788646332981%2F&show_text=false&width=267&t=0"
+                                            width="267" height="476" style="border:none;overflow:hidden" scrolling="no"
+                                            frameborder="0" allowfullscreen="true"
+                                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                            allowFullScreen="true" class="rounded" style="max-width:100%;"></iframe>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bg-light mb-4 border-0 shadow-sm p-3 rounded-4">
+                                <h3>Importância</h3>
+                                <ul>
+                                    <li>A importância do Ursinho Elo reside no cuidado humanizado, focando no bem-estar
+                                        emocional do paciente e não apenas na cura da doença. O projeto é tão
+                                        significativo que sua primeira versão conquistou o prestigiado prêmio Leão de
+                                        Ouro em Cannes, em 2014.</li>
+                                    <li>
+                                        Para os pacientes, como relatado por Théo Manzini, o robô representa a ponte que
+                                        os une novamente à família e aos amigos, o que é fundamental para enfrentar o
+                                        isolamento do tratamento
+                                    </li>
+
+
+                                </ul>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
         </section>
 
         <section class="quem-somos py-5 section-ultra-light">
@@ -101,21 +204,35 @@
                 </div>
                 <div class="row align-items-center g-5">
                     <div class="col-12 col-md-5">
-                        <div class="card-hospital-featured p-4 text-light text-center rounded-4 shadow-sm position-relative">
-                            <div class="hospital-icon-circle mx-auto mb-4">
-                                <i class="fa-solid fa-square-plus text-purple"></i>
+                        <div
+                            class="card-hospital-featured p-4 text-light text-center rounded-4 shadow-sm position-relative">
+                            <div class="mx-auto mb-4 w-100 ">
+                                <img src="https://cdn.prod.website-files.com/642302a0f023e00b83b9be99/64e34c3e3f1e7e519eb1da1a_whatsapp-image-2017-10-05-at-15-54-09.jpeg"
+                                    alt="Ícone do Hospital Amaral Carvalho" class="img-fluid" style="width: 100%; ">
                             </div>
-                            <h3 class="h4 mb-4">Hospital Amaral Carvalho</h3>
-                            <div class="dummy-description opacity-75">
-                                <a href="https://www.amaralcarvalho.org.br/sobre" class="text-light">Saiba Mais...</a>
+
+                            <div class="dummy-description opacity-75 ">
+                                <h2 class="h4">Hospital Amaral Carvalho</h2>
+                                <p>
+                                    Referência nacional no tratamento oncológico,
+                                    com atendimento humanizado para pacientes
+                                    e familias.</p>
+                                <a href="https://www.amaralcarvalho.org.br/sobre"
+                                    class=" btn btn-outline-light rounded-pill text-start">Saiba Mais...</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-7">
                         <h2 class="title-purple-dark text-md-start text-center mb-4">Cuidar vai além da medicina</h2>
                         <div class="text-muted text-description">
-                            <p class="mb-3">A Fundação Hospital Amaral Carvalho é referência no tratamento oncológico e no cuidado humanizado aos pacientes. Com uma trajetória marcada pela dedicação, acolhimento e compromisso com a vida, a instituição busca oferecer não apenas tratamento médico de excelência, mas também apoio emocional, social e educacional para crianças e famílias.</p>
-                            <p class="m-0">Pensando em tornar o ambiente hospitalar mais leve, acolhedor e educativo, surgiu este projeto: uma plataforma de jogos desenvolvida para proporcionar momentos de aprendizado, diversão e conforto durante o período de tratamento e recuperação.</p>
+                            <p class="mb-3">A Fundação Hospital Amaral Carvalho é referência no tratamento oncológico e
+                                no cuidado humanizado aos pacientes. Com uma trajetória marcada pela dedicação,
+                                acolhimento e compromisso com a vida, a instituição busca oferecer não apenas tratamento
+                                médico de excelência, mas também apoio emocional, social e educacional para crianças e
+                                famílias.</p>
+                            <p class="m-0">Pensando em tornar o ambiente hospitalar mais leve, acolhedor e educativo,
+                                surgiu este projeto: uma plataforma de jogos desenvolvida para proporcionar momentos de
+                                aprendizado, diversão e conforto durante o período de tratamento e recuperação.</p>
                         </div>
                     </div>
                 </div>
@@ -130,39 +247,123 @@
                         Ver todos os jogos <i class="fa-solid fa-arrow-right ms-1"></i>
                     </a>
                 </div>
-                
-                <div class="slider-wrapper position-relative d-flex align-items-center justify-content-center">
-                    <button class="btn btn-arrow-slider left-arrow position-absolute start-0 z-2"><i class="fa-solid fa-chevron-left"></i></button>
-                    
-                    <div class="row w-100 justify-content-center align-items-center g-3 px-5 carousel-mock">
-                        <div class="col-3 d-none d-md-block opacity-50 text-center">
-                            <div class="game-card-placeholder side-card p-4 rounded-4 text-light">
-                                 <i class="fa-solid fa-gamepad"></i>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-5 text-center scale-active">
-                            <img  class="img-fluid " src="assets/img/desenho.png" alt="Jogo em Destaque">
-                        </div>
-                        <div class="col-3 d-none d-md-block opacity-50 text-center">
-                            <div class="game-card-placeholder side-card p-4 rounded-4 text-light">
-                                <i class="fa-solid fa-gamepad"></i>
-                            </div>
-                        </div>
-                    </div>
+                <!-- CARDS JOGOS CARROSSEL -->
 
-                    <button class="btn btn-arrow-slider right-arrow position-absolute end-0 z-2"><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="container swiper">
+                    <div class="card-list swiper-wrapper">
+
+                        <article class="card-item swiper-slide">
+                             <div class="card-image-area placeholder-bg">
+                                
+                                <span class="rating">4.9 ★</span>
+                            </div>
+                            
+                            <h3 class="card-title-slider">Storytelling ELO</h3>
+                            <p class="user-profession">Crie histórias</p>
+                            <a href="pages/jogos/descricao.html?id=1" class="message-button">Jogar</a>
+                        </article>
+
+                        <article class="card-item swiper-slide">
+                            <div class="card-image-area placeholder-bg">
+                                
+                                <span class="rating">4.9 ★</span>
+                            </div>
+                            <h3 class="card-title-slider">Matematica do Elo</h3>
+                            <p class="user-profession">Desáfios matematicos</p>
+                            <a href="pages/jogos/descricao.html?id=2" class="message-button">Jogar</a>
+                        </article>
+
+                        <article class="card-item swiper-slide">
+                            <div class="card-image-area placeholder-bg">
+                                <i class="fa-solid fa-gamepad joystick-icon"></i>
+                                <span class="rating">4.9 ★</span>
+                            </div>
+
+                            <h3 class="card-title-slider">Jogo 3</h3>
+                            <p class="user-profession">Descrição do jogo 3.</p>
+                            <a href="pages/jogos/descricao.html?id=3" class="message-button">Jogar</a>
+                        </article>
+
+                        <article class="card-item swiper-slide">
+                            <div class="card-image-area placeholder-bg">
+                                <i class="fa-solid fa-gamepad joystick-icon"></i>
+                                <span class="rating">4.9 ★</span>
+                            </div>
+
+                            <h3 class="card-title-slider">Jogo 4</h3>
+                            <p class="user-profession">Descrição do jogo 4.</p>
+                            <a href="pages/jogos/descricao.html?id=4" class="message-button">Jogar</a>
+                        </article>
+
+
+
+                    </div>
+                    <div class="swiper-controls d-flex align-items-center justify-content-center gap-3 mt-3">
+
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+
             </div>
         </section>
     </main>
 
-    <footer class="text-center py-5">
+    <footer class="text-light pt-5">
         <div class="container">
-            <h2 class="footer-title m-0">Desenvolvido em 2026</h2>
+            <div class="row gy-4 align-items-start footer-grid mb-5">
+                <div class="col-12 col-md-4 footer-brand px-3 px-md-0">
+                    <img src="assets/img/logo.png" alt="Logo do ELO" class="img-fluid mb-3"
+                        style="width: 60px; height: 60px; object-fit: cover;">
+                    <hr class="border-light opacity-50">
+                    <p>
+                        Plataforma com jogos educativos voltados à aprendizagem de forma divertida e principalmente para
+                        o <strong>acolhimento</strong>.
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 footer-links footer-column text-center">
+                    <h4 class="h5 mb-3">Navegação</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="index.html" class="text-hover-white">Início</a>
+                        <a href="pages/jogos/jogos.html" class="text-hover-white">Jogos</a>
+                        <a href="pages/sobre.html" class="text-hover-white">Sobre</a>
+                        <a href="pages/contato.html" class="text-hover-white">Contato</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 footer-contato footer-column text-center">
+                    <h4 class="h5 mb-3">Redes Sociais</h4>
+                    <div class="footer-icons d-flex justify-content-center justify-content-sm-start gap-3 fs-5">
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="Telefone"><i
+                                class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="E-mail"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center footer-bottom">
+                        <p class="mb-0">
+                            &copy; 2026 ELOPLAY. Todos os direitos reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/carrousel.js"></script>
+    <script src="../../assets/js/jogo.js"></script>
 </body>
 
 </html>

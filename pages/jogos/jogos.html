@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial</title>
+    <title>Catalogo</title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/img/favicon_io/site.webmanifest">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -18,252 +24,195 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/stylecatalogo.css">
+    <link rel="stylesheet" href="../../assets/css/stylePrincipal.css">
 
 </head>
 
 <body>
     <!-- CABEÇALHO -->
-   <header class="navbar navbar-expand-lg bg-white sticky-top container-fluid">
+    <header class="navbar navbar-expand-lg bg-white sticky-top container-fluid">
         <div class="container navbar-container">
             <a class="navbar-brand logo-placeholder" href="/index.html">
-                <img src="../../assets/img/logo.png" alt="Logo do ELO" class="img-fluid rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
+                <img src="../../assets/img/logo.png" alt="Logo do ELO" class="img-fluid rounded-circle"
+                    style="width: 40px; height: 40px; object-fit: cover;">
             </a>
-            
-            <nav class="d-none d-md-flex align-items-center mx-auto">
+
+            <nav class=" d-md-flex align-items-center mx-auto">
                 <ul class="nav-links">
-                    <li><a href="../../index.html" class="active">Início</a></li>
-                    <li><a href="jogos.html">Jogo</a></li>
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="jogos.html" class="active">Jogo</a></li>
                     <li><a href="../sobre.html">Sobre</a></li>
                     <li><a href="../contato.html">Contato</a></li>
                 </ul>
             </nav>
-            
-             <a href="../login/index.html" class="btn-entrar">
+
+            <a href="../login/index.html" class="btn-entrar">
                 <i class="fa-solid fa-right-to-bracket"></i>Entrar
             </a>
         </div>
     </header>
 
     <!-- CONTEUDO AQ -->
-      <section class="search-container">
+    <section class="search-container">
         <div class="search-row">
-            <button class="filter-btn"><i class="fa-solid fa-filter"></i></button>
+            <button class="filter-btn" id="filterBtn">
+                <i class="fa-solid fa-filter"></i>
+            </button>
             <div class="search-bar-wrapper">
                 <input type="text" placeholder="pesquisar jogos" class="search-input">
             </div>
         </div>
-       
+
+        <div class="tags-row flex-wrap" id="tagsRow">
+            <input type="button" class="tag active-tag" value="Aventura">
+            <input type="button" class="tag" value="Quebra-cabeça">
+             <input type="button" class="tag" value="Storytelling">
+            <input type="button" class="tag" value="Saude">
+        </div>
     </section>
 
-    <!-- GRID DE JOGOS (15 JOGOS NO TOTAL) -->
-    <main class="games-grid">
-        
-        <!-- Jogo 1 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 1</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
 
+    <main class="games-grid container flex-wrap">
+        <!-- Jogo 1 -->
+
+        <a href="descricao.html?id=1" class="game-card-link text-decoration-none">
+            <div class="game-card">
+                <div class="card-image-area placeholder-bg">
+
+                    <span class="rating">4.9 ★</span>
+                </div>
+
+                <div class="card-content">
+                    <span class="game-time">10-20min</span>
+                    <h3 class="game-title">Storytelling ELO</h3>
+
+                    <p class="game-desc">
+                        descrição basica...descrição basica...
+                        descrição basica...descrição basica...
+                    </p>
+                </div>
+            </div>
+        </a>
         <!-- Jogo 2 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
+        <a href="descricao.html?id=2" class="game-card-link text-decoration-none">
+            <div class="game-card">
+                <div class="card-image-area placeholder-bg">
+                   
+                    <span class="rating">4.9 ★</span>
+                </div>
+
+                <div class="card-content">
+                    <span class="game-time">10-20min</span>
+                    <h3 class="game-title">Matematica do Elo</h3>
+
+                    <p class="game-desc">
+                        descrição basica...descrição basica...
+                        descrição basica...descrição basica...
+                    </p>
+                </div>
             </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 2</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
+        </a>
 
         <!-- Jogo 3 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 3</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
+        <a href="descricao.html?id=3" class="game-card-link text-decoration-none">
+            <div class="game-card">
+                <div class="card-image-area placeholder-bg">
+                    <i class="fa-solid fa-gamepad joystick-icon"></i>
+                    <span class="rating">4.9 ★</span>
+                </div>
 
+                <div class="card-content">
+                    <span class="game-time">10-20min</span>
+                    <h3 class="game-title">Jogo 3</h3>
+
+                    <p class="game-desc">
+                        descrição basica...descrição basica...
+                        descrição basica...descrição basica...
+                    </p>
+                </div>
+            </div>
+        </a>
         <!-- Jogo 4 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 4</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
+        <a href="descricao.html?id=4" class="game-card-link text-decoration-none">
+            <div class="game-card">
+                <div class="card-image-area placeholder-bg">
+                    <i class="fa-solid fa-gamepad joystick-icon"></i>
+                    <span class="rating">4.9 ★</span>
+                </div>
 
-        <!-- Jogo 5 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 5</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
+                <div class="card-content">
+                    <span class="game-time">10-20min</span>
+                    <h3 class="game-title">Jogo 4</h3>
 
-        <!-- Jogo 6 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
+                    <p class="game-desc">
+                        descrição basica...descrição basica...
+                        descrição basica...descrição basica...
+                    </p>
+                </div>
             </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 6</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
+        </a>
 
-        <!-- Jogo 7 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 7</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
 
-        <!-- Jogo 8 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 8</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
 
-        <!-- Jogo 9 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 9</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
 
-        <!-- Jogo 10 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 10</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
 
-        <!-- Jogo 11 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 11</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
-
-        <!-- Jogo 12 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 12</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
-
-        <!-- Jogo 13 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 13</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
-
-        <!-- Jogo 14 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 14</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
-
-        <!-- Jogo 15 -->
-        <div class="game-card">
-            <div class="card-image-area placeholder-bg">
-                <i class="fa-solid fa-gamepad joystick-icon"></i>
-                <span class="rating">4.9 ★</span>
-            </div>
-            <div class="card-content">
-                <span class="game-time">10-20min</span>
-                <h3 class="game-title">Jogo 15</h3>
-                <p class="game-desc">descrição basica...descrição basica... descrição basica...descrição basica... descrição basica...descrição basica...</p>
-            </div>
-        </div>
     </main>
 
 
 
-     <footer class="text-center py-5">
+    <footer class="text-light pt-5">
         <div class="container">
-            <h2 class="footer-title m-0">Desenvolvido em 2026</h2>
+            <div class="row gy-4 align-items-start footer-grid mb-5">
+                <div class="col-12 col-md-4 footer-brand px-3 px-md-0">
+                    <img src="../../assets/img/logo.png" alt="Logo do ELO" class="img-fluid mb-3"
+                        style="width: 60px; height: 60px; object-fit: cover;">
+                    <hr class="border-light opacity-50">
+                    <p>
+                        Plataforma com jogos educativos voltados à aprendizagem de forma divertida e principalmente para
+                        o <strong>acolhimento</strong>.
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 footer-links footer-column text-center">
+                    <h4 class="h5 mb-3">Navegação</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="../../index.html" class="text-hover-white">Início</a>
+                        <a href="jogos.html" class="text-hover-white">Jogos</a>
+                        <a href="../sobre.html" class="text-hover-white">Sobre</a>
+                        <a href="../contato.html" class="text-hover-white">Contato</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 footer-contato footer-column text-center">
+                    <h4 class="h5 mb-3">Redes Sociais</h4>
+                    <div class="footer-icons d-flex justify-content-center gap-3 fs-5">
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="Telefone"><i
+                                class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="E-mail"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="down-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center footer-bottom">
+                        <p class="mb-0">&copy; 2026 ELOPLAY. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+
+    <script src="../../assets/js/jogo.js"></script>
 </body>
 
 </html>

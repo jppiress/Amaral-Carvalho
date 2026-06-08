@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicon_io/site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/stylePrincipal.css">
     <link rel="stylesheet" href="../assets/css/styleContato.css">
+    
 </head>
+
 <body>
 
-   <header class="navbar navbar-expand-lg bg-white sticky-top">
+     <header class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container navbar-container">
             <a class="navbar-brand logo-placeholder" href="/index.html">
                 <img src="../assets/img/logo.png" alt="Logo do ELO" class="img-fluid rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
             </a>
             
-            <nav class="d-none d-md-flex align-items-center mx-auto">
+            <nav class=" d-md-flex align-items-center mx-auto">
                 <ul class="nav-links">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="jogos/jogos.html">Jogo</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="contato.html"  class="active ">Contato</a></li>
                 </ul>
             </nav>
             
-            <a href="login/index.html" class="btn-entrar">
+             <a href="login/index.html" class="btn-entrar">
                 <i class="fa-solid fa-right-to-bracket"></i>Entrar
             </a>
         </div>
     </header>
 
     <main>
-        
+
         <section class="card redes-sociais-card text-light">
             <h2>Redes Sociais </h2>
             <p>Amaral Carvalho: </p>
-            
-            
+
+
             <div class="rede-item">
                 <i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com/amaral.carvalho/" target="_blank" class="text-light">@amaral.carvalho</a>
-                
+                <a href="https://www.instagram.com/amaral.carvalho/" target="_blank"
+                    class="text-light">@amaral.carvalho</a>
+
             </div>
-            
+
             <div class="rede-item">
                 <i class="fa-regular fa-envelope"></i>
                 <a href="mailto:ouvidoria@amaralcarvalho.org.br" target="_blank" class="text-light">ouvidoria</a>
             </div>
-            
+
             <div class="rede-item">
                 <i class="fa-solid fa-phone"></i>
                 (14) 3602-1200
             </div>
-            
+
             <div class="rede-item">
                 <i class="fa-solid fa-globe"></i>
-                <a href="https://www.amaralcarvalho.org.br/" target="_blank" class="text-light">www.amaralcarvalho.org.br</a>
+                <a href="https://www.amaralcarvalho.org.br/" target="_blank"
+                    class="text-light">www.amaralcarvalho.org.br</a>
             </div>
         </section>
 
@@ -72,7 +84,7 @@
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" placeholder="Digite seu nome aqui :D" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="ultimo-nome">Email</label>
                     <input type="email" id="email" placeholder="jorgimBalacoBaco@exemplo.com" required>
@@ -81,7 +93,7 @@
                     <label for="assunto">Assunto</label>
                     <input type="text" id="assunto" placeholder="Digite o assunto aqui :D" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" placeholder="Digite uma mensagem aqui :D" required></textarea>
@@ -93,11 +105,51 @@
 
     </main>
 
-    <footer class="text-center py-5">
+    <footer class="text-light pt-5">
         <div class="container">
-            <h2 class="footer-title m-0">Desenvolvido em 2026</h2>
+            <div class="row gy-4 align-items-start footer-grid mb-5">
+                <div class="col-12 col-md-4 footer-brand px-3 px-md-0">
+                    <img src="../assets/img/logo.png" alt="Logo do ELO" class="img-fluid mb-3"
+                        style="width: 60px; height: 60px; object-fit: cover;">
+                    <hr class="border-light opacity-50">
+                    <p>
+                        Plataforma com jogos educativos voltados à aprendizagem de forma divertida e principalmente para
+                        o <strong>acolhimento</strong>.
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 footer-links footer-column text-center">
+                    <h4 class="h5 mb-3">Navegação</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="../index.html" class="text-hover-white">Início</a>
+                        <a href="jogos/jogos.html" class="text-hover-white">Jogos</a>
+                        <a href="sobre.html" class="text-hover-white">Sobre</a>
+                        <a href="contato.html" class="text-hover-white">Contato</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 footer-contato footer-column text-center">
+                    <h4 class="h5 mb-3">Redes Sociais</h4>
+                    <div class="footer-icons d-flex justify-content-center gap-3 fs-5">
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="down-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center footer-bottom">
+                        <p class="mb-0">&copy; 2026 ELOPLAY. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
 </body>
+
 </html>

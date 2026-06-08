@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #ECE9FE;
+    color: #22153C;
+}
+
+/* --- NAVBAR / NAVBAR CONTAINER --- */
+header {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #22153C;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.2s ease;
+    padding: 8px 0;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #5B21B6;
+}
+
+.btn-entrar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #22153C;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.btn-entrar:hover {
+    color: #5B21B6;
+    transform: translateY(-1px);
+}
+
+
+/* HERO */
+
+.hero-jogo {
+    background: linear-gradient(
+        135deg,
+        #5314B2,
+        #2E1065
+    );
+
+    border-radius: 24px;
+
+    padding: 50px;
+
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-imagem {
+    width: 320px;
+    height: 220px;
+
+    background: rgba(255,255,255,.1);
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagem-jogo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.hero-imagem i {
+    color: white;
+    font-size: 90px;
+}
+
+.hero-conteudo {
+    color: white;
+}
+
+.hero-conteudo h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.subtitulo {
+    max-width: 600px;
+    opacity: .9;
+}
+
+.avaliacao {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.btn-jogar {
+    margin-top: 20px;
+
+    border: none;
+
+    background: white;
+
+    color: #5314B2;
+
+    font-weight: 700;
+
+    padding: 12px 30px;
+
+    border-radius: 12px;
+}
+
+/* INFO */
+
+.informacoes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background: #EBF0FF;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,.08);
+}
+
+.info-card i {
+    color: #5314B2;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    margin: 0;
+}
+
+/* TAGS */
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.categoria {
+    background: rgba(83,20,178,.1);
+    color: #5314B2;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    font-weight: 600;
+}
+
+/* DESCRIÇÃO */
+
+.descricao,
+.avaliar,
+.comentarios {
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,.06);
+}
+
+/* AVALIAR */
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    resize: none;
+}
+
+.btn-publicar {
+    margin-top: 15px;
+
+    background: #5314B2;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 12px;
+}
+
+/* COMENTÁRIOS */
+
+.comentario-card {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+
+    background: #5314B2;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+}
+
+.estrelas {
+    color: #f4b400;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 60px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(56,23,107,.9),
+        #2E1065
+    );
+}
+
+.footer-title {
+    color: #ECE9FE;
+    font-size: 12px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    .hero-jogo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-imagem {
+        width: 100%;
+    }
+
+    .informacoes {
+        grid-template-columns: 1fr;
+    }
+
+}

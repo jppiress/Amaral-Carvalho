@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descrição do Jogo</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/img/favicon_io/site.webmanifest">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../assets/css/styleDescricao.css">
+    <link rel="stylesheet" href="../../assets/css/stylePrincipal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar navbar-expand-lg bg-white sticky-top container-fluid">
+        <div class="container navbar-container">
+            <a class="navbar-brand logo-placeholder" href="/index.html">
+                <img src="../../assets/img/logo.png" alt="Logo do ELO" class="img-fluid rounded-circle"
+                    style="width: 40px; height: 40px; object-fit: cover;">
+            </a>
+
+            <nav class=" d-md-flex align-items-center mx-auto">
+                <ul class="nav-links">
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="jogos.html" class="active">Jogo</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="../login/index.html" class="btn-entrar">
+                <i class="fa-solid fa-right-to-bracket"></i>Entrar
+            </a>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <!-- HERO -->
+        <section class="hero-jogo">
+
+            <div class="hero-imagem">
+
+                <img id="imagem-jogo" src="" alt="Imagem do jogo">
+
+            </div>
+
+            <div class="hero-conteudo">
+
+                <span class="avaliacao" id="avaliacao-jogo"></span>
+
+                <h1 id="nome-jogo"></h1>
+
+                <p class="subtitulo" id="subtitulo-jogo"></p>
+
+                <a href="" class="btn-jogar" id="btn-jogar">
+                    Jogar Agora
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- INFORMAÇÕES -->
+        <section class="informacoes mt-5">
+
+            <div class="info-card">
+                <i class="fa-solid fa-child-reaching"></i>
+                <h6>Faixa Etária</h6>
+                <p id="idade-jogo"></p>
+            </div>
+
+            <div class="info-card">
+                <i class="fa-regular fa-clock"></i>
+                <h6>Duração</h6>
+                <p id="duracao-jogo"></p>
+            </div>
+
+            <div class="info-card">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h6>Dificuldade</h6>
+                <p id="dificuldade-jogo"></p>
+            </div>
+
+        </section>
+
+        <!-- CATEGORIAS -->
+        <section class="categorias mt-4" id="categorias-jogo">
+
+        </section>
+
+        <!-- DESCRIÇÃO -->
+        <section class="descricao mt-5">
+
+            <h2>Sobre o jogo</h2>
+
+            <p id="descricao-jogo"></p>
+
+        </section>
+
+        <!-- AVALIAR -->
+        <section class="avaliar mt-5">
+
+            <h2>Avalie este jogo</h2>
+
+            <textarea placeholder="Compartilhe sua experiência..."></textarea>
+
+            <button class="btn-publicar">
+                Publicar Avaliação
+            </button>
+
+        </section>
+
+        <!-- COMENTÁRIOS -->
+        <!-- <section class="comentarios mt-5">
+
+            <h2>Avaliações</h2>
+
+            <div class="comentario-card">
+
+                <div class="avatar">
+                    J
+                </div>
+
+                <div>
+
+                    <h5>Joaquim P.</h5>
+
+                    <span class="estrelas">
+                        ★★★★★
+                    </span>
+
+                    <p>
+                        Excelente atividade para desenvolver atenção e criatividade.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="comentario-card">
+
+                <div class="avatar">
+                    M
+                </div>
+
+                <div>
+
+                    <h5>Maria S.</h5>
+
+                    <span class="estrelas">
+                        ★★★★☆
+                    </span>
+
+                    <p>
+                        Muito divertido e intuitivo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section> -->
+
+    </main>
+
+      <footer class="text-light pt-5">
+        <div class="container">
+            <div class="row gy-4 align-items-start footer-grid mb-5">
+                <div class="col-12 col-md-4 footer-brand px-3 px-md-0">
+                    <img src="../../assets/img/logo.png" alt="Logo do ELO" class="img-fluid mb-3"
+                        style="width: 60px; height: 60px; object-fit: cover;">
+                    <hr class="border-light opacity-50">
+                    <p>
+                        Plataforma com jogos educativos voltados à aprendizagem de forma divertida e principalmente para
+                        o <strong>acolhimento</strong>.
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 footer-links footer-column text-center">
+                    <h4 class="h5 mb-3">Navegação</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="../../index.html" class="text-hover-white">Início</a>
+                        <a href="jogos.html" class="text-hover-white">Jogos</a>
+                        <a href="../sobre.html" class="text-hover-white">Sobre</a>
+                        <a href="../contato.html" class="text-hover-white">Contato</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 footer-contato footer-column text-center">
+                    <h4 class="h5 mb-3">Redes Sociais</h4>
+                    <div class="footer-icons d-flex justify-content-center gap-3 fs-5">
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="down-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center footer-bottom">
+                        <p class="mb-0">&copy; 2026 ELOPLAY. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../../assets/js/descricao.js"></script>
+</body>
+
+</html>

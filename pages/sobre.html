@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial</title>
+    <title>Sobre</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicon_io/site.webmanifest">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FONTES -->
@@ -15,6 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/styleSobre.css">
+    <link rel="stylesheet" href="../assets/css/stylePrincipal.css">
 
 </head>
 
@@ -26,11 +32,11 @@
                 <img src="../assets/img/logo.png" alt="Logo do ELO" class="img-fluid rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
             </a>
             
-            <nav class="d-none d-md-flex align-items-center mx-auto">
+            <nav class=" d-md-flex align-items-center mx-auto">
                 <ul class="nav-links">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="jogos/jogos.html">Jogo</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="sobre.html" class="active ">Sobre</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
@@ -44,7 +50,7 @@
     <!-- CONTEUDO AQ -->
   <main class="container-fluid">
     <!-- Seção Amaral Carvalho -->
-    <section class="card card-amaral">
+    <section class="card card-amaral ">
         <h2 class="card-title">Sobre a Amaral Carvalho</h2>
         <div class="conteudo-flex">
             <img src="https://terceirotempo.uol.com.br/imagens/39/01/w640_h426_pdt_ft1_133901.webp" alt="Hospital">
@@ -56,7 +62,7 @@ Em 1915, os filantropos Domingos Pereira de Carvalho e Anna Marcelina de Carvalh
 Hoje, o Hospital Amaral Carvalho transformou-se em um dos maiores complexos de saúde do país, sendo referência nacional em oncologia e transplante de medula óssea.</p>
             
         </div>
-
+         <h2 class="card-title">Localização</h2>
         <div class="mapa-container justify-content-center d-flex align-items-center">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22948.189457630433!2d-48.549902357791666!3d-22.274740276883815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c758070aeb12ef%3A0x5a970cdd4226ef2d!2sHospital%20Amaral%20Carvalho!5e1!3m2!1spt-BR!2sbr!4v1780340571203!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -65,18 +71,101 @@ Hoje, o Hospital Amaral Carvalho transformou-se em um dos maiores complexos de s
     <!-- Seção Equipe Dev -->
     <section class="card">
         <h2 class="card-title">Sobre a Equipe Dev</h2>
-        <div class="equipe-container">
-            <img src="" alt="">
-        </div>
-        <p class="descricao-legenda">*Uma descrição muito boa*</p>
+
+        <article class="equipe-container">
+            <img src="../assets/img/time/Guilherme.png" alt="Guilherme" class="img-fluid">
+            <div class="equipe-text">
+                <h2>Guilherme</h2>
+                <p class="descricao-legenda">Estudante de Desenvolvimento de Software Multiplataforma na FATEC Jaú, gosto muito da área de tecnologia, tanto software quanto hardware, procuro desenvolver minhas experiências e habilidades.</p>
+            </div>
+        </article>
+
+        <article class="equipe-container">
+            <img src="../assets/img/time/Victor.png" alt="Victor" class="img-fluid">
+            <div class="equipe-text">
+                <h2>Victor</h2>
+                <p class="descricao-legenda">Estudante de Desenvolvimento de Software e Multiplataforma na Faculdade de Tecnologia de Jahu, com amplo interesse na área de desenvolvimento de programa, e disposto a aprender mais sobre o ramo da tecnologia.</p>
+            </div>
+        </article>
+
+        <article class="equipe-container">
+            <img src="../assets/img/time/" alt="Paulo" class="img-fluid">
+            <div class="equipe-text">
+                <h2>Paulo</h2>
+                <p class="descricao-legenda">Olá, meu nome é Paulo, e estou começando a programar! Estou fazendo graduação de Desenvolvimento de Software Multiplataforma na FATEC.</p>
+            </div>
+        </article>
+
+        <article class="equipe-container">
+            <img src="../assets/img/time/Pedro.jpeg" alt="Pedro" class="img-fluid">
+            <div class="equipe-text">
+                <h2>Pedro</h2>
+                <p class="descricao-legenda">Estudante de Desenvolvimento de Software Multiplataforma na FATEC Jahu, com interesse nas áreas de tecnologia, desenvolvimento de software e inovação. Possuo experiência em pesquisa científica e em constante busca por aprimoramento profissional e acadêmico.</p>
+            </div>
+        </article>
+
+        <article class="equipe-container">
+            <img src="../assets/img/time/Joao.png" alt="João" class="img-fluid">
+            <div class="equipe-text">
+                <h2>João</h2>
+                <p class="descricao-legenda">Sou um estudante de Desenvolvimento de Software Multiplataforma na FATEC Jahu, com interesse na área de programação, sou novato na área, mas estou procurando aperfeiçoar meus conhecimentos.</p>
+            </div>
+        </article>
+
+        <article class="equipe-container">
+            <img src="../assets/img/time/Matheus.png" alt="Matheus" class="img-fluid">
+            <div class="equipe-text">
+                <h2>Matheus</h2>
+                <p class="descricao-legenda">Descrição em revisão. Em breve, mais detalhes sobre a participação de Matheus no projeto.</p>
+            </div>
+        </article>
     </section>
 </main>
 
 
 
-    <footer class="text-center py-5">
+    <footer class="text-light pt-5">
         <div class="container">
-            <h2 class="footer-title m-0">Desenvolvido em 2026</h2>
+            <div class="row gy-4 align-items-start footer-grid mb-5">
+                <div class="col-12 col-md-4 footer-brand px-3 px-md-0">
+                    <img src="../assets/img/logo.png" alt="Logo do ELO" class="img-fluid mb-3"
+                        style="width: 60px; height: 60px; object-fit: cover;">
+                    <hr class="border-light opacity-50">
+                    <p>
+                        Plataforma com jogos educativos voltados à aprendizagem de forma divertida e principalmente para
+                        o <strong>acolhimento</strong>.
+                    </p>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 footer-links footer-column text-center">
+                    <h4 class="h5 mb-3">Navegação</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="../index.html" class="text-hover-white">Início</a>
+                        <a href="jogos/jogos.html" class="text-hover-white">Jogos</a>
+                        <a href="sobre.html" class="text-hover-white">Sobre</a>
+                        <a href="contato.html" class="text-hover-white">Contato</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 footer-contato footer-column text-center">
+                    <h4 class="h5 mb-3">Redes Sociais</h4>
+                    <div class="footer-icons d-flex justify-content-center gap-3 fs-5">
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="footer-social-icon text-hover-white" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="down-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center footer-bottom">
+                        <p class="mb-0">&copy; 2026 ELOPLAY. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

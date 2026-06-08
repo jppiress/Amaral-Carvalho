@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "nome": "StoryTeller ELO",
+    "subtitulo": "Desenvolva criatividade, atenção e raciocínio através de histórias interativas.",
+    "descricao": "Monte imagens incríveis e desenvolva habilidades cognitivas através da narrativa.",
+    "idade": "5-12 anos",
+    "duracao": "10-20 min",
+    "dificuldade": "Médio",
+    "avaliacao": 4.9,
+    "imagem": "../../assets/img/desenho.png",
+    "categorias": [
+      "Raciocínio",
+      "Concentração",
+      "Visual"
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Matemática do Elo",
+    "subtitulo": "Resolva desafios e desenvolva o pensamento lógico.",
+    "descricao": "Complete desafios matemáticos junto com o Elo",
+    "link": "https://agentphpp.github.io/ursinhoElo-matematica-game/",
+    "idade": "6-14 anos",
+    "duracao": "5-15 min",
+    "dificuldade": "Fácil",
+    "avaliacao": 4.7,
+    "imagem": "../../assets/img/game2.png",
+    "categorias": [
+      "Lógica",
+      "Observação",
+      "Resolução de Problemas"
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Memória Colorida",
+    "subtitulo": "Treine sua memória de forma divertida.",
+    "descricao": "Encontre pares de cartas e fortaleça a memória visual enquanto se diverte com desafios progressivos.",
+    "idade": "5-10 anos",
+    "duracao": "5-15 min",
+    "dificuldade": "Fácil",
+    "avaliacao": 4.8,
+    "imagem": "../../assets/img/jogos/memoria.png",
+    "categorias": [
+      "Memória",
+      "Atenção",
+      "Concentração"
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Labirinto das Ideias",
+    "subtitulo": "Planeje seus movimentos e encontre a saída.",
+    "descricao": "Navegue por labirintos cada vez mais complexos, desenvolvendo estratégia, orientação espacial e tomada de decisão.",
+    "idade": "8-15 anos",
+    "duracao": "10-25 min",
+    "dificuldade": "Difícil",
+    "avaliacao": 4.6,
+    "imagem": "../../assets/img/jogos/labirinto.png",
+    "categorias": [
+      "Estratégia",
+      "Orientação Espacial",
+      "Planejamento"
+    ]
+  },
+  {
+  "id": 3,
+  "nome": "Memória Colorida",
+  "subtitulo": "Treine sua memória de forma divertida.",
+  "descricao": "Encontre pares de cartas e fortaleça a memória visual enquanto se diverte com desafios progressivos.",
+  "idade": "5-10 anos",
+  "duracao": "5-15 min",
+  "dificuldade": "Fácil",
+  "avaliacao": 4.8,
+  "imagem": "../../assets/img/jogos/memoria.png",
+  "categorias": [
+    "Memória",
+    "Atenção",
+    "Concentração"
+  ]
+},
+{
+  "id": 4,
+  "nome": "Labirinto das Ideias",
+  "subtitulo": "Planeje seus movimentos e encontre a saída.",
+  "descricao": "Navegue por labirintos cada vez mais complexos, desenvolvendo estratégia, orientação espacial e tomada de decisão.",
+  "idade": "8-15 anos",
+  "duracao": "10-25 min",
+  "dificuldade": "Difícil",
+  "avaliacao": 4.6,
+  "imagem": "../../assets/img/jogos/labirinto.png",
+  "categorias": [
+    "Estratégia",
+    "Orientação Espacial",
+    "Planejamento"
+  ]
+}
+]

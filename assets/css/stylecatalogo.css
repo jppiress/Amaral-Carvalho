@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
-   
+
     align-items: center;
 }
 
@@ -106,37 +106,57 @@ header {
     background-color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     color: #333;
-    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .search-input::placeholder {
     color: #555;
 }
 
+
+/* Modifique a sua classe .tags-row existente para começar escondida */
 .tags-row {
-    display: flex;
+    display: none;
+    /* Esconde a linha por padrão */
     gap: 15px;
     padding-left: 65px;
+    /* Opcecional: adiciona uma animação simples de fade-in */
+    animation: fadeIn 0.3s ease-in-out;
 }
 
+/* Nova classe que o JavaScript vai aplicar para mostrar as categorias */
+.tags-row.open {
+    display: flex;
+}
+
+/* Elemento base da tag (caso queira usar como botão limpo) */
 .tag {
-    width: 80px;
-    height: 30px;
-    background-color: rgba(255, 255, 255, 0.6);
+   
+    height: 40px;
+    background-color: rgba(179, 167, 177, 0.6);
     border-radius: 8px;
+    border: none;
+    /* Remove bordas padrões se usar a tag <button> */
     cursor: pointer;
+    transition: background-color 0.2s;
+    padding: 0 15px;
 }
-
-.tag.active-tag {
-    background-color: #5314B2;
+.tag:hover {
+    background-color: rgba(96, 59, 89, 0.9);
+    color: #FFFFFF;
 }
-
 /* GRID DE JOGOS */
+.game-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .games-grid {
     width: 100%;
     max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
     padding: 20px;
 }
@@ -145,11 +165,12 @@ header {
     background-color: #EBF0FF;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
 }
 
+/* ÁREA DE IMAGEM DO CARD */
 .card-image-area {
     position: relative;
     height: 220px;
@@ -161,6 +182,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* pega o primeiro card e coloca uma imagem */
+.game-card-link:nth-child(1) .placeholder-bg {
+    background-image: url('../img/desenho.png');
+    background-size: cover;
+    background-position: center;
+}
+.game-card-link:nth-child(2) .placeholder-bg {
+    background-image: url('../img/game2.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .joystick-icon {
@@ -218,7 +251,7 @@ header {
     padding: 40px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .description-box h2 {
