@@ -87,70 +87,54 @@ RNF12 – O sistema deve ser compatível com navegadores modernos como Google Ch
 RNF13 – O sistema deve funcionar em diferentes dispositivos (desktop e mobile)<br>
 <br>
 
-# 3. Estudo de viabilidade<br>
-<br>
-  *Viabilidade Técnica: <br>
-Utilização de navegadores(Chrome, Edge, FireFox);  <br>
- <br>
-  *Recursos: <br>
-Ferramentas de organização como o Trello; <br>
-Dispositivos eletrônicos por parte dos desenvolvedores, utilizando a infraestrutura da fatec, como computadores e notebooks; <br>
-<br>
-  *Viabilidade Operacional: <br>
-  <br>
-  *Gerenciamento: <br>
-O projeto seguirá modelo de desenvolvimento incremental; <br>
-Entregas parciais ao longo do semestre; <br>
-O acompanhamento de todas as tarefas será realizado através da ferramenta Trello; <br>
-Desenvolvimento dividido entre os integrantes; <br>
-O código será organizado e comentado para permitir que equipe realizem manutenções futuras;<br>
-Sistema simples de manter e atualizar; <br>
-<br>
-  *Viabilidade de Mercado:<br>
-Existe um crescimento do mercado de plataformas digitais voltadas ao entretenimento e aprendizado infantil. <br>
-Quase nenhum é voltado para hospitais; <br>
-Falta foco em crianças em tratamento;<br>
-   <br>
-   *Público-alvo: <br>
-Crianças em tratamento hospitalar; <br>
-Instituições de saúde; <br>
-Educadores e familiares; <br>
-  <br>
-  *Concorrência: <br>
-Em relação aos concorrentes existam plataformas semelhantes,porém o projeto se destaca por ser um site próprio do hospital. <br>
-  <br>
-  *Diferencial:<br>
-Foco em ambiente hospitalar: <br>
-crianças internadas; <br>
-ambiente hospitalar; <br>
-momentos de fragilidade (tratamento, espera, recuperação);<br>
-<br>
-  *Interface simples e acessível: <br>
-interface simples, intuitiva e fácil para crianças; <br>
-<br>
-  *Possibilidade de inclusão de jogos próprios: <br>
-adicionar novos jogos; <br>
-criar jogos próprios; <br>
-talvez até receber jogos de terceiros no futuro; <br>
-<br>
-  *Projeção de vendas (ou retorno): <br>
-Uso por crianças no hospital; <br>
-Benefício educacional; <br>
-Apoio emocional; <br>
-Possível expansão para outras instituições; <br>
-<br>
-  *Viabilidade Financeira: <br>
-Não haverá ganho pois é um projeto educacional. <br>
-Este projeto possui baixo custo; <br>
-<br>
-  *Custo de Desenvolvimento: <br>
-Para a equipe existirá o custo de energia e horas de trabalho.
-Não há custos de licenciamento de software. Os recursos principais são os equipamentos dos próprios integrantes (notebooks pessoais), e o suporte da infraestrutura da Fatec. <br>
-Hospedagem por enquanto será pelo Github; <br>
-  <br>
-  _Possíveis custos: <br>
-Para o hospital só existirá o custo da hospedagem do site.  <br>
-<br>
+# 3. Estudo de Viabilidade
+
+Análise detalhada das viabilidades técnica, operacional, de mercado e financeira para a implementação do projeto.
+
+---
+
+### 3.1. Viabilidade Técnica
+
+* **Compatibilidade:** O sistema será totalmente Web, compatível com os principais navegadores do mercado (Google Chrome, Microsoft Edge, Mozilla Firefox).
+* **Recursos Tecnológicos:** - Utilização de dispositivos eletrônicos pessoais dos próprios desenvolvedores (notebooks e computadores).
+  - Suporte e uso da infraestrutura física e tecnológica da **Fatec**.
+  - Ferramentas gratuitas de gestão e organização, como o **Trello**.
+
+---
+
+### 3.2. Viabilidade Operacional
+
+* **Metodologia de Gerenciamento:** O projeto adotará o modelo de desenvolvimento incremental, com entregas parciais e contínuas ao longo do semestre.
+* **Organização da Equipe:** - Divisão clara de tarefas entre os integrantes do grupo.
+  - Acompanhamento diário e gestão do fluxo de trabalho centralizados no Trello.
+* **Manutenção:** O código-fonte será estruturado, organizado e devidamente comentado. Isso garante que o sistema seja simples de manter e atualizar, permitindo que futuras equipes realizem modificações sem dificuldades.
+
+---
+
+### 3.3. Viabilidade de Mercado
+
+* **Análise de Cenário:** Existe um crescimento constante no mercado de plataformas digitais focadas em entretenimento e aprendizado infantil. Contudo, nota-se uma escassez crônica de soluções voltadas especificamente para o ambiente hospitalar e crianças sob tratamento de saúde.
+* **Público-Alvo:** - Crianças em tratamento hospitalar.
+  - Instituições de saúde e hospitais.
+  - Educadores, acompanhantes e familiares.
+* **Concorrência:** Embora existam plataformas de jogos semelhantes no mercado, o projeto se diferencia e ganha força por ser uma plataforma integrada e chancelada como canal oficial do próprio hospital.
+* **Diferenciais Estratégicos:**
+  - **Foco no Ambiente Hospitalar:** Desenvolvido sob medida para crianças internadas que enfrentam momentos de fragilidade (espera, tratamento e recuperação).
+  - **Interface Simples e Acessível:** Design totalmente voltado à experiência infantil, sendo intuitivo e fácil de usar.
+  - **Inclusão Dinâmica de Jogos:** Flexibilidade para adicionar novos jogos, criar soluções próprias e, futuramente, aceitar contribuições de jogos desenvolvidos por terceiros.
+* **Projeção de Retorno:** O retorno do projeto é estritamente social e humanitário, focado no apoio emocional e no benefício educacional das crianças assistidas, com potencial para expansão para outras instituições de saúde no futuro.
+
+---
+
+### 3.4. Viabilidade Financeira
+
+* **Modelo de Custos:** Por se tratar de um projeto puramente educacional e de responsabilidade social, ele possui custo financeiro direto baixíssimo e não visa lucro.
+* **Custos de Desenvolvimento:**
+  - **Equipe:** Custos intangíveis focados em consumo de energia e horas de dedicação (hora-homem).
+  - **Licenciamento:** Custo zero, priorizando ferramentas de código aberto (*open-source*) ou planos gratuitos.
+  - **Hospedagem Inicial:** Realizada de forma gratuita através do **GitHub Pages**.
+* **Custos Futuros:** Caso o hospital decida internalizar a plataforma em seus servidores próprios no futuro, o único custo gerado será o de manutenção da hospedagem e do domínio do site.
+* 
 # 4. Regras de negócio (Modelo canvas)<br>
 
 <img width="1920" height="1080" alt="Modelo de negócio canvas (1)" src="https://github.com/user-attachments/assets/d7391d22-ccb7-4bb8-88d9-c944ea8c7b8d" />
