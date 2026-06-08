@@ -155,6 +155,60 @@ Para o hospital só existirá o custo da hospedagem do site.  <br>
 
 <img width="1920" height="1080" alt="Modelo de negócio canvas (1)" src="https://github.com/user-attachments/assets/d7391d22-ccb7-4bb8-88d9-c944ea8c7b8d" />
 
+### 4.1. O que será elaborado?
+
+**Proposta de valor:**
+- Acolhimento às crianças do hospital Amaral Carvalho;
+- Portfólio, apresentando algumas informações do Hospital, sobre o robô Elo, ou queira conhecer os jogos disponíveis que trazem acolhimento;
+
+---
+
+### 4.2. Como será elaborado?
+
+**Parcerias principais:**
+- Fatec;
+- Hospital Amaral Carvalho.
+
+**Atividades principais:**
+- Entender o problema do hospital;
+- Levantar os requisitos;
+- Elaborar o protótipo;
+- Desenvolver o código do repositório on-line para o compartilhamento e manutenção de jogos educativos;
+
+**Recursos principais:**
+- Notebook da Fatec, equipamentos pessoais;
+- Ferramentas de desenvolvimento: HTML, CSS, JS;
+- Ferramentas de organização: Trello;
+
+---
+
+### 4.3. Para quem será elaborado?
+
+**Segmento de clientes:**
+- Crianças em tratamento hospitalar;
+- Educadores, acompanhantes, visitantes e pessoas interessadas em projetos de responsabilidade social;
+
+**Relacionamento com o cliente:**
+- Direto: Feedback integrado na plataforma (avaliação de jogos e comentários e formulários);
+
+**Canais:**
+- Plataforma Web (acesso via navegador em desktop ou dispositivo móveis);
+- Redes sociais do hospital;
+- Outros sites do hospital;
+
+---
+
+### 4.4. Quanto custará?
+
+**Estrutura de custos:**
+- Energia;
+- Hora homem;
+- Hospedagem do site;
+
+**Fontes de receitas:**
+- Não haverá fontes de receita no momento, talvez possua parcerias futuras.
+
+
 # 5. Design
 Paleta de cor:
 -Roxo Escuro A: #2E1065 <br>
