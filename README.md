@@ -231,3 +231,5 @@ https://www.figma.com/proto/vyH992W0mgX97MzCJwBxla/amaral-Rascunho?node-id=4-791
 
 # 7. Aplicação# Amaral-Carvalho
 https://amaralelo.netlify.app/
+## repositorio: 
+https://github.com/jppiress/Amaral-Carvalho
