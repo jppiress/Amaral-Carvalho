@@ -1,15 +1,16 @@
 <p align="left" style="font-size:28px;">
-  <strong><em>Documentação do PI</em></strong></p> 
+  <strong><em>Documentação PI do Amaral Carvalho</em></strong></p> 
+
+  --Equipe 5-- <br><br>
+Guilherme Nogueira <br>
+João Pedro P Rampo <br>
+Matheus Molan <br>
+Paulo Henrique <br>
+Pedro Augusto <br>
+Victor Gabriel <br>
+  
   <details>
     <summary><strong>Sumário</strong></summary>
-
---Equipe 5-- <br><br>
-- Guilherme Nogueira <br>
-- João Pedro P Rampo <br>
-- Matheus Molan <br>
-- Paulo Henrique <br>
-- Pedro Augusto <br>
-- Victor Gabriel <br>
  
 - [1. Introdução](#1-introdução)
 - [Objetivos](#-objetivos)
