@@ -1,7 +1,7 @@
 <p align="left" style="font-size:28px;">
   <strong><em>Documentação PI do Amaral Carvalho</em></strong></p> 
 
-  --Equipe 5-- <br><br>
+  --Equipe 4-- <br><br>
 Guilherme Nogueira <br>
 João Pedro P Rampo <br>
 Matheus Molan <br>
