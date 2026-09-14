@@ -2,6 +2,7 @@
   <strong><em>Documentação PI do Amaral Carvalho</em></strong></p> 
 
   --Equipe 4-- <br><br>
+Geovana <br>
 Guilherme Nogueira <br>
 João Pedro P Rampo <br>
 Matheus Molan <br>
