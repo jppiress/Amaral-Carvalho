@@ -68,6 +68,8 @@ RF10 – O sistema deve apresentar uma página de Contato com formulário para e
 RF11 – O sistema deve permitir a visualização das equipes responsáveis pelo projeto: Nome dos integrantes, Função ou participação no projeto, Foto(opcional). <br>
 RF12 – O sistema deve exibir os jogos mais bem avaliados ou em destaque: Jogos mais acessados, Jogos mais bem avaliados. <br>
 RF13 – O sistema deve permitir a filtragem de jogos: Categoria, Avaliação, Ordem alfabética. <br>
+RF14 - O sistema deve coletar e armazenar dados através dos jogos desenvolvidos para a plataforma. <br>
+
 <br>
 ## • Requisitos não funcionais<br>
 <br>
