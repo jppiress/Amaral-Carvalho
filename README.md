@@ -58,7 +58,7 @@ Quem? Crianças
 RF01 – O sistema deve permitir que usuários realizem cadastro e login: Nome, E-mail, Senha e Confirmação de senha. <br>
 RF02 – O sistema deve permitir navegação entre as páginas: Início, Sobre, Jogos, Contato. Login/cadastro e Equipe. <br>
 RF03 – O sistema deve permitir que administradores publiquem e removam jogos na plataforma: Nome, Categoria, Descrição, Imagem de capa, Arquivo ou link do jogo. <br>
-RF04 – O sistema deve peossuir uma vitrina para exibição dos jogos disponíveis: Nome do jogo, Imagem/capa, Categoria, Descrição resumida, Avaliação média. <br>
+RF04 – O sistema deve possuir uma vitrina para exibição dos jogos disponíveis: Nome do jogo, Imagem/capa, Categoria, Descrição resumida, Avaliação média. <br>
 RF05 – O sistema deve permitir que o usuário visualize os detalhes de um jogo ao selecioná-lo. <br>
 RF06 - O sistema deve permitir que os jogos sejam executados diretamente no navegador: Botão"Jogar", Carregamento do jogo na própria plataforma. <br>
 RF07 – O sistema deve permitir que usuários enviem feedbacks sobre os jogos. <br>
