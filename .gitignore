@@ -1,0 +1,35 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+build/
+.next/
+.output/
+coverage/
+
+# Dumps gerados pelo .bat
+dump-*.txt
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+credentials.json
+serviceAccount.json
+secrets.json
+id_rsa
+id_rsa.pub
+.npmrc
+.netrc
+.htpasswd
+.git-credentials
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
