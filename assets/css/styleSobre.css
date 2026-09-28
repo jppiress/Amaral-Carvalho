@@ -10,12 +10,12 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #FFFFFF;
+    color: #22153C;
 }
 
-/* --- NAVBAR / NAVBAR CONTAINER --- */
+/* --- NAVBAR --- */
 header {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -63,7 +63,6 @@ header {
     transform: translateY(-1px);
 }
 
-
 /* --- CONTAINER PRINCIPAL --- */
 main {
     width: 100%;
@@ -72,25 +71,24 @@ main {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin: 0 auto;
 }
 
-/* Estilo Comum dos Cards */
 .card {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 30px;
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    color: #22153C;
 }
-
-/* --- SEÇÃO AMARAL CARVALHO --- */
-
 
 .card-title {
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 25px;
+    color: #4C1D95;
 }
 
 .conteudo-flex {
@@ -121,6 +119,11 @@ main {
     margin-top: 15px;
 }
 
+.mapa-container iframe {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
 @media (max-width: 768px) {
     .conteudo-flex {
         flex-direction: column;
@@ -138,7 +141,7 @@ main {
     }
 }
 
-/* --- SEÇÃO EQUIPE DEV --- */
+/* --- EQUIPE DEV --- */
 .equipe-container {
     display: flex;
     align-items: center;
@@ -157,6 +160,7 @@ main {
     object-fit: cover;
     border: 3px solid #ffffff;
     flex-shrink: 0;
+    background: #ddd;
 }
 
 .equipe-text {
@@ -199,15 +203,7 @@ main {
     }
 }
 
-
-
-
-
-
-
-
-
-/* --- RODAPÉ --- */
+/* --- FOOTER --- */
 footer {
     background: linear-gradient(180deg, rgba(56, 23, 107, 0.9) 0%, #2E1065 100%);
     border-top: 1px solid rgba(236, 233, 254, 0.1);

@@ -13,9 +13,9 @@ body {
     color: #FFFFFF;
 }
 
-/* --- NAVBAR / NAVBAR CONTAINER --- */
+/* --- NAVBAR --- */
 header {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -68,21 +68,19 @@ main {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 60px 20px;
     gap: 40px;
     flex-wrap: wrap;
 }
 
-
-
-/* Cards Gerais */
 .card {
     background-color: #22153C;
     border-radius: 12px;
     padding: 40px;
     min-height: 700px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: #fff;
 }
 
 .card h2 {
@@ -94,10 +92,9 @@ main {
     margin-bottom: 40px;
 }
 
-/* Coluna Esquerda: Redes Sociais */
+/* --- REDES SOCIAIS --- */
 .redes-sociais-card {
     width: 340px;
-   
 }
 
 .rede-item {
@@ -114,14 +111,17 @@ main {
     text-align: center;
 }
 
-.linha-placeholder {
-    flex: 1;
-    height: 12px;
-    background-color: #7C3AED;
-    border-radius: 6px;
+.rede-item a {
+    color: #fff;
+    text-decoration: none;
+    word-break: break-word;
 }
 
-/* Coluna Direita: Formulário de Contato */
+.rede-item a:hover {
+    color: #FACC15;
+}
+
+/* --- FORMULÁRIO --- */
 .contato-card {
     width: 500px;
 }
@@ -137,7 +137,7 @@ main {
     margin-bottom: 8px;
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
     width: 100%;
     background-color: #FFFFFF;
@@ -147,6 +147,7 @@ main {
     font-size: 16px;
     color: #22153C;
     outline: none;
+    font-family: inherit;
 }
 
 .form-group input {
@@ -176,7 +177,7 @@ main {
     background-color: #E2B600;
 }
 
-/* --- RODAPÉ --- */
+/* --- FOOTER --- */
 footer {
     background: linear-gradient(180deg, rgba(56, 23, 107, 0.9) 0%, #2E1065 100%);
     border-top: 1px solid rgba(236, 233, 254, 0.1);
@@ -188,20 +189,21 @@ footer {
     color: #ECE9FE;
 }
 
-/* Responsividade */
+/* --- RESPONSIVO --- */
 @media (max-width: 900px) {
     main {
         flex-direction: column;
         align-items: center;
     }
-    .contato-card, .redes-sociais-card {
+
+    .contato-card,
+    .redes-sociais-card {
         width: 100%;
         max-width: 500px;
+        min-height: auto;
     }
-    header {
-        padding: 15px 20px;
-    }
-    nav ul {
-        gap: 15px;
+
+    .card {
+        padding: 30px 20px;
     }
 }

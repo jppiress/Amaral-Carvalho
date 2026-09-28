@@ -1,55 +1,90 @@
-console.log("descricao.js carregado");
+// assets/js/descricao.js
 
-const params = new URLSearchParams(window.location.search);
-
-const id = Number(params.get("id"));
-
-console.log(id);
-
-
+document.addEventListener("DOMContentLoaded", carregarJogo);
 
 async function carregarJogo() {
+    const params = new URLSearchParams(window.location.search);
+    const id = Number(params.get("id"));
 
-    const resposta =
-        await fetch("../../assets/data/descricao.json");
+    if (!id) {
+        exibirErro("Nenhum jogo especificado.");
+        return;
+    }
 
-    const jogos =
-        await resposta.json();
+    try {
+        const resposta = await fetch("../../assets/data/descricao.json");
+        if (!resposta.ok) throw new Error(`HTTP ${resposta.status}`);
 
-    const jogo =
-        jogos.find(
-            jogo => jogo.id === id
-        );
+        const jogos = await resposta.json();
+        const jogo = jogos.find(j => j.id === id);
 
-    console.log(jogo);
+        if (!jogo) {
+            exibirErro("Jogo não encontrado. Verifique o endereço.");
+            return;
+        }
 
-    document.getElementById("imagem-jogo").src =
-    jogo.imagem;
-
-    document.getElementById("nome-jogo").textContent =
-        jogo.nome;
-
-    document.getElementById("subtitulo-jogo").textContent =
-        jogo.subtitulo;
-
-    document.getElementById("descricao-jogo").textContent =
-        jogo.descricao;
-
-        
-    document.getElementById("btn-jogar").href =
-        jogo.link;
-
-    document.getElementById("idade-jogo").textContent =
-        jogo.idade;
-
-    document.getElementById("duracao-jogo").textContent =
-        jogo.duracao;
-
-    document.getElementById("dificuldade-jogo").textContent =
-        jogo.dificuldade;
-
+        preencher(jogo);
+    } catch (erro) {
+        console.error("Erro ao carregar jogo:", erro);
+        exibirErro("Não foi possível carregar as informações do jogo.");
+    }
 }
 
-carregarJogo();
+function preencher(jogo) {
+    const set = (id, valor) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = valor ?? "";
+    };
 
+    const img = document.getElementById("imagem-jogo");
+    if (img) {
+        if (jogo.imagem) {
+            img.src = jogo.imagem;
+            img.alt = jogo.nome || "Imagem do jogo";
+            img.onerror = () => { img.style.display = "none"; };
+        } else {
+            img.style.display = "none";
+        }
+    }
 
+    set("nome-jogo", jogo.nome);
+    set("subtitulo-jogo", jogo.subtitulo);
+    set("descricao-jogo", jogo.descricao);
+    set("idade-jogo", jogo.idade);
+    set("duracao-jogo", jogo.duracao);
+    set("dificuldade-jogo", jogo.dificuldade);
+
+    // Avaliação
+    set("avaliacao-jogo", jogo.avaliacao ? `${jogo.avaliacao} ★` : "");
+
+    // Categorias
+    const containerCat = document.getElementById("categorias-jogo");
+    if (containerCat && Array.isArray(jogo.categorias)) {
+        containerCat.innerHTML = jogo.categorias
+            .map(cat => `<span class="categoria">${cat}</span>`)
+            .join("");
+    }
+
+    // Botão jogar
+    const btn = document.getElementById("btn-jogar");
+    if (btn) {
+        if (jogo.link) {
+            btn.href = jogo.link;
+            btn.target = "_blank";
+            btn.rel = "noopener";
+        } else {
+            btn.textContent = "Em breve....";
+            btn.style.backgroundColor = "rgba(255, 255, 255, 0.08)";
+            btn.style.borderColor = "white";
+            btn.style.color = "white";
+        }
+    }
+
+    document.title = `${jogo.nome || "Jogo"} | ELO`;
+}
+
+function exibirErro(msg) {
+    const main = document.querySelector("main");
+    if (!main) return;
+    main.innerHTML = `<div class="alert alert-warning text-center mt-5">${msg}</div>`;
+}

@@ -6,12 +6,9 @@
     font-family: 'Inter', sans-serif;
 }
 
-
-
-
-/* --- NAVBAR / NAVBAR CONTAINER --- */
+/* --- NAVBAR --- */
 header {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -59,23 +56,22 @@ header {
     transform: translateY(-1px);
 }
 
-/* FUNDO DEGRADÊ IGUAL AO FIGMA */
+/* --- FUNDO DEGRADÊ --- */
 .login-body {
     background: linear-gradient(135deg, #2E1065 0%, #4C1D95 40%, #5B21B6 70%, #7C3AED 100%);
     min-height: 100vh;
     overflow-x: hidden;
 }
 
-/* CAIXA DE LOGIN ESCURA */
+/* --- CAIXA --- */
 .login-box {
-    background-color: #1A1230; /* Roxo ultra escuro do mockup */
+    background-color: #1A1230;
     width: 100%;
     max-width: 520px;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* TÍTULO */
 .login-title {
     color: #FFFFFF;
     font-size: 2.2rem;
@@ -83,20 +79,18 @@ header {
 }
 
 .highlight-purple-light {
-    color: #A855F7; /* Tom de lilás/rosa em destaque */
+    color: #A855F7;
 }
 
-/* CONTAINER DA LOGO BRANCA ARREDONDADA */
 .logo-container {
     width: 130px;
     height: 130px;
-    
     border-radius: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .logo-img {
@@ -104,12 +98,11 @@ header {
     object-fit: contain;
 }
 
-/* FORMULÁRIO COMPRIMENTO */
 .form-container {
     max-width: 380px;
 }
 
-/* ESTILIZAÇÃO MINIMALISTA DOS INPUTS (APENAS LINHA INFERIOR) */
+/* --- INPUTS --- */
 .input-group-custom {
     position: relative;
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
@@ -143,7 +136,7 @@ header {
     color: rgba(255, 255, 255, 0.4);
 }
 
-/* BOTÕES ESTILO PÍLULA TRANSPARENTES */
+/* --- BOTÕES --- */
 .btn-login-action {
     width: 100%;
     max-width: 240px;
@@ -155,28 +148,15 @@ header {
     background: transparent;
 }
 
-/* Botão Confirmar */
-.btn-confirmar {
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.btn-confirmar:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-   
-}
-
-/* Botão Cadastro */
+.btn-confirmar,
 .btn-cadastro {
     border: 2px solid rgba(255, 255, 255, 0.3);
     color: rgba(255, 255, 255, 0.8);
 }
 
+.btn-confirmar:hover,
 .btn-cadastro:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-color: #FFFFFF;
     color: #FFFFFF;
-   
 }

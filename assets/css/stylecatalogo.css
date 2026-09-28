@@ -10,14 +10,12 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #FFFFFF;
-
-    align-items: center;
+    color: #22153C;
 }
 
-/* --- NAVBAR / NAVBAR CONTAINER --- */
+/* --- NAVBAR --- */
 header {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -65,11 +63,11 @@ header {
     transform: translateY(-1px);
 }
 
-
-/* --- CONTEÚDO PRINCIPAL --- */
+/* --- PESQUISA --- */
 .search-container {
     width: 100%;
     max-width: 1000px;
+    margin: 0 auto;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
@@ -91,6 +89,7 @@ header {
     border-radius: 8px;
     cursor: pointer;
     font-size: 18px;
+    flex-shrink: 0;
 }
 
 .search-bar-wrapper {
@@ -100,52 +99,52 @@ header {
 .search-input {
     width: 100%;
     height: 50px;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 0 25px;
     background-color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     color: #333;
-    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .search-input::placeholder {
     color: #555;
 }
 
-
-/* Modifique a sua classe .tags-row existente para começar escondida */
 .tags-row {
     display: none;
-    /* Esconde a linha por padrão */
     gap: 15px;
     padding-left: 65px;
-    /* Opcecional: adiciona uma animação simples de fade-in */
     animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Nova classe que o JavaScript vai aplicar para mostrar as categorias */
 .tags-row.open {
     display: flex;
 }
 
-/* Elemento base da tag (caso queira usar como botão limpo) */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
 .tag {
-   
     height: 40px;
     background-color: rgba(179, 167, 177, 0.6);
     border-radius: 8px;
     border: none;
-    /* Remove bordas padrões se usar a tag <button> */
     cursor: pointer;
     transition: background-color 0.2s;
     padding: 0 15px;
+    color: #22153C;
 }
-.tag:hover {
-    background-color: rgba(96, 59, 89, 0.9);
+
+.tag:hover,
+.tag.active-tag {
+    background-color: #5B21B6;
     color: #FFFFFF;
 }
-/* GRID DE JOGOS */
+
+/* --- GRID DE JOGOS --- */
 .game-card-link {
     text-decoration: none;
     color: inherit;
@@ -155,8 +154,9 @@ header {
 .games-grid {
     width: 100%;
     max-width: 1000px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
     padding: 20px;
 }
@@ -168,9 +168,14 @@ header {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* ÁREA DE IMAGEM DO CARD */
+.game-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
 .card-image-area {
     position: relative;
     height: 220px;
@@ -184,12 +189,12 @@ header {
     align-items: center;
 }
 
-/* pega o primeiro card e coloca uma imagem */
 .game-card-link:nth-child(1) .placeholder-bg {
     background-image: url('../img/desenho.png');
     background-size: cover;
     background-position: center;
 }
+
 .game-card-link:nth-child(2) .placeholder-bg {
     background-image: url('../img/game2.png');
     background-size: cover;
@@ -215,6 +220,7 @@ header {
 .card-content {
     padding: 20px;
     flex-grow: 1;
+    color: #22153C;
 }
 
 .game-time {
@@ -237,7 +243,7 @@ header {
     line-height: 1.4;
 }
 
-/* SEÇÃO DESCRIÇÃO */
+/* --- DESCRIÇÃO --- */
 .description-section {
     width: 100%;
     max-width: 1000px;
@@ -260,15 +266,22 @@ header {
     letter-spacing: 1px;
 }
 
-/* --- RODAPÉ --- */
+/* --- FOOTER --- */
 footer {
-    align-self: stretch;
     background: linear-gradient(180deg, rgba(56, 23, 107, 0.9) 0%, #2E1065 100%);
     border-top: 1px solid rgba(236, 233, 254, 0.1);
+    color: #ECE9FE;
 }
 
 .footer-title {
     font-size: 12px;
     font-weight: 400;
     color: #ECE9FE;
+}
+
+@media (max-width: 576px) {
+    .tags-row {
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
 }

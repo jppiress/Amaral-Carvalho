@@ -16,9 +16,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-/* --- NAVBAR / NAVBAR CONTAINER --- */
+/* --- NAVBAR --- */
 header {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -49,9 +49,11 @@ header {
 .nav-links li a.active {
     color: #5B21B6;
 }
-.texto{
+
+.texto {
     color: #5B21B6;
 }
+
 .btn-entrar {
     display: flex;
     align-items: center;
@@ -89,115 +91,68 @@ header {
     display: inline-block;
 }
 
-/* --- SEÇÃO DE APRESENTAÇÃO (HERO) --- */
+/* --- HERO --- */
 .apresentacao {
-    background-color: #1a0b36; /* Um roxo mais profundo e menos "neon" como base */
+    background-color: #1a0b36;
     background-image: url('../img/testesBanner/blurry.jpg');
     background-size: cover;
-   
     position: relative;
     overflow: hidden;
 }
 
-/* Um brilho sutil ao fundo para dar profundidade, fugindo do gradiente linear travado */
-
-
-.img-fluid{
+.img-fluid {
     border-radius: 6%;
 }
+
 .content-hero h1 {
     line-height: 1.15;
     letter-spacing: -1px;
 }
 
-.highlight-yellow{
-   
+.highlight-yellow {
     color: #FACC15;
     font-weight: 600;
-  
 }
 
-/* Customização da Imagem para que ela pareça integrada, não apenas jogada na tela */
 .img-hero-custom {
-    border-radius: 24px; /* Cantos arredondados suavizam o visual */
+    border-radius: 24px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     transition: transform 0.5s ease;
 }
 
-
-
-/* BOTÕES CUSTOMIZADOS HERO */
-.btn-warning-custom {
-    background-color: #FBBF24;
-    color: #1a0b36;
-    font-weight: 700;
-    padding: 14px 32px;
-    border-radius: 12px; /* Menos arredondado "pílula total" traz um ar mais moderno/tech e menos infantil */
-    border: none;
-    box-shadow: 0px 4px 20px rgba(251, 191, 36, 0.2);
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.btn-warning-custom:hover {
-    background-color: #fca5a5; /* Uma transição de cor leve ou tom mais vivo */
-    background-color: #F59E0B;
-   
-    box-shadow: 0px 8px 28px rgba(251, 191, 36, 0.4);
-}
-
-.btn-outline-light-custom {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: #FFFFFF;
-    font-weight: 600;
-    padding: 14px 32px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-.btn-outline-light-custom:hover {
-    background-color: #FFFFFF;
-    color: #1a0b36;
-   
-}
-
-/* BOTÕES CUSTOMIZADOS HERO */
+/* --- BOTÕES CUSTOMIZADOS HERO --- */
 .btn-warning-custom {
     background-color: #FBBF24;
     color: #22153C;
     font-weight: 700;
-    padding: 12px 28px;
-    border-radius: 16px;
+    padding: 14px 32px;
+    border-radius: 12px;
     border: none;
-    box-shadow: 0px 4px 20px rgba(251, 191, 36, 0.4);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(251, 191, 36, 0.25);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-warning-custom:hover {
     background-color: #F59E0B;
-    
-    box-shadow: 0px 6px 24px rgba(251, 191, 36, 0.6);
+    box-shadow: 0 8px 28px rgba(251, 191, 36, 0.45);
 }
 
 .btn-outline-light-custom {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.08);
     color: #FFFFFF;
     font-weight: 600;
-    padding: 12px 28px;
-    border-radius: 16px ;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 14px 32px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     transition: all 0.3s ease;
 }
 
 .btn-outline-light-custom:hover {
     background-color: #FFFFFF;
-    color: #2E1065;
-   
+    color: #1a0b36;
 }
 
 /* --- PROPOSTA DO PROJETO --- */
-
-
 .section-light {
     background-color: #F1F5F9;
 }
@@ -213,12 +168,11 @@ header {
     background-color: #E2E8F0 !important;
     border-radius: 16px !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
 }
 
 .card-proposta:hover {
     transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
 }
 
 .card-proposta .icon-box {
@@ -226,7 +180,7 @@ header {
     color: #22153C;
 }
 
-/* --- SEÇÃO QUEM SOMOS --- */
+/* --- QUEM SOMOS --- */
 .section-ultra-light {
     background-color: #FAFAFA;
 }
@@ -265,7 +219,9 @@ header {
 }
 
 /* --- JOGOS EM DESTAQUE --- */
-
+.border-top-divider {
+    border-top: 1px solid #E2E8F0;
+}
 
 .btn-outline-purple-action {
     border: 2px solid #4C1D95;
@@ -280,59 +236,8 @@ header {
     background-color: #4C1D95;
     color: #FFFFFF;
 }
-/* .border-top-divider {
-    border-top: 1px solid #E2E8F0;
-}
 
-
-
-/* MOCKUP DO SLIDER */
-
-/* .slider-wrapper {
-    min-height: 250px;
-}
-
-.game-card-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-
-.side-card {
-    background-color: #4C1D95;
-    min-height: 180px;
-}
-
-.active-card {
-    background-color: #1E1B4B;
-    min-height: 220px;
-}
-
-.scale-active {
-    transform: scale(1.05);
-    z-index: 1;
-}
-
-.btn-arrow-slider {
-    background-color: #7C3AED;
-    color: #FFFFFF;
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    transition: background-color 0.2s;
-}
-
-.btn-arrow-slider:hover {
-    background-color: #5B21B6;
-    color: #FFFFFF;
-} */
-
+/* --- SWIPER --- */
 .swiper {
     overflow: hidden;
     max-width: 1200px;
@@ -418,11 +323,13 @@ header {
     background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 100%);
     border: 1px solid transparent;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
 }
 
 .card-list .card-item .message-button:hover {
     transform: translateY(-1px);
     box-shadow: 0 8px 18px rgba(91, 33, 182, 0.25);
+    color: #fff;
 }
 
 .swiper .swiper-pagination-bullet {
@@ -452,12 +359,13 @@ header {
     font-weight: 700;
 }
 
-/* pega o primeiro card e coloca uma imagem */
+/* imagens específicas do carrossel */
 .card-item:nth-child(1) .placeholder-bg {
     background-image: url('../img/desenho.png');
     background-size: cover;
     background-position: center;
 }
+
 .card-item:nth-child(2) .placeholder-bg {
     background-image: url('../img/game2.png');
     background-size: cover;
@@ -484,7 +392,6 @@ footer {
     border-top: 1px solid rgba(236, 233, 254, 0.12);
     margin-top: 80px;
     color: #ECE9FE;
-    /* Removido o padding-bottom daqui já que controlamos no HTML com pt-5 */
 }
 
 .footer-grid {
@@ -537,16 +444,13 @@ footer {
     }
 }
 
-.footer-links a:hover {
-    opacity: 1;
-    color: #fff;
-}
-
+.footer-links a:hover,
 .footer-contato a:hover {
     opacity: 1;
     color: #fff;
 }
-.footer-icons{
+
+.footer-icons {
     background-color: rgba(255, 255, 255, 0.08);
     padding: 8px;
     border-radius: 20px;
@@ -568,12 +472,12 @@ footer {
 
 .down-footer {
     width: 100%;
-    padding: 20px 0; /* Ajustado padding vertical */
+    padding: 20px 0;
     background-color: #1a0b36;
 }
 
 .footer-bottom p {
     font-size: 0.82rem;
     opacity: 0.7;
-    margin: 0; /* Garante que nenhuma margem residual do navegador crie vãos adicionais */
+    margin: 0;
 }

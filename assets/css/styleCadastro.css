@@ -6,9 +6,9 @@
     font-family: 'Inter', sans-serif;
 }
 
-/* --- NAVBAR / NAVBAR CONTAINER --- */
+/* --- NAVBAR --- */
 header {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     height: 70px;
 }
@@ -41,45 +41,41 @@ header {
     color: #5B21B6;
 }
 
-/* FUNDO DEGRADÊ (Mantido o padrão vibrante) */
+/* --- FUNDO DEGRADÊ --- */
 .login-body {
     background: linear-gradient(135deg, #2E1065 0%, #4C1D95 40%, #5B21B6 70%, #7C3AED 100%);
     min-height: 100vh;
     overflow-x: hidden;
 }
 
-/* CAIXA DE CADASTRO ESCURA */
+/* --- CAIXA --- */
 .login-box {
-    background-color: #1A1230; /* Roxo ultra escuro igual ao mockup */
+    background-color: #1A1230;
     width: 100%;
     max-width: 520px;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* TÍTULO */
 .login-title {
     color: #FFFFFF;
     font-size: 2.2rem;
     font-weight: 700;
 }
 
-/* Cor Magenta/Rosa do destaque "conta" na imagem */
 .highlight-magenta {
-    color: #C026D3; 
+    color: #C026D3;
 }
 
-/* CONTAINER DA LOGO BRANCA ARREDONDADA */
 .logo-container {
     width: 130px;
     height: 130px;
-    
     border-radius: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .logo-img {
@@ -87,12 +83,11 @@ header {
     object-fit: contain;
 }
 
-/* FORMULÁRIO COMPRIMENTO */
 .form-container {
     max-width: 380px;
 }
 
-/* ESTILIZAÇÃO MINIMALISTA DOS INPUTS */
+/* --- INPUTS --- */
 .input-group-custom {
     position: relative;
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
@@ -101,7 +96,7 @@ header {
 }
 
 .input-group-custom:focus-within {
-    border-color: #C026D3; /* Foca na cor do destaque */
+    border-color: #C026D3;
 }
 
 .input-icon {
@@ -126,7 +121,7 @@ header {
     color: rgba(255, 255, 255, 0.4);
 }
 
-/* BOTÕES ESTILO PÍLULA TRANSPARENTES */
+/* --- BOTÕES --- */
 .btn-login-action {
     width: 100%;
     max-width: 240px;
@@ -138,30 +133,17 @@ header {
     background: transparent;
 }
 
-/* Botão Confirmar */
-.btn-confirmar {
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.btn-confirmar:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-   
-}
-
-/* Botão Possui Conta? */
+.btn-confirmar,
 .btn-possui-conta {
     border: 2px solid rgba(255, 255, 255, 0.3);
     color: rgba(255, 255, 255, 0.8);
 }
 
+.btn-confirmar:hover,
 .btn-possui-conta:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-color: #FFFFFF;
     color: #FFFFFF;
-   
 }
 
 .btn-entrar {
